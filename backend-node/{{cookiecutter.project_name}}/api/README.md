@@ -13,8 +13,8 @@ Used to retrieve list of libraries in Stencil database based on some search crit
 
 |Field|Type|Description|
 |---|---|---|
-|libraryId|string|Internal library ID which uniquely identifies a sample.|
-|libraryName|string|The name of the sample|
+|libraryId|string|Internal library ID which uniquely identifies a library.|
+|libraryName|string|The name of the library|
 |projectId|string|The ID which uniquely identifies a project.|
 |groupTag|object|A dictionary of group tags, for example, {"sampleId":"xyz", targetId":"abc"}.|
 |libraryType|string|The type of assay.|
@@ -109,8 +109,8 @@ Call to register the event of a library being taken. Library ID is assigned as a
 
 |Field|Type|Description|
 |---|---|---|
-|libraryId|string|Internal library ID which uniquely identifies a sample.|
-|libraryName|string|The name of the sample|
+|libraryId|string|Internal library ID which uniquely identifies a library.|
+|libraryName|string|The name of the library|
 |projectId|string|The ID which uniquely identifies a project.|
 |groupTag|object|A dictionary of group tags, for example, {"sampleId":"xyz", targetId":"abc"}.|
 |libraryType|string|The type of assay.|
@@ -214,10 +214,10 @@ Used to retrieve the details of a single library from a Stencil database.
 
 | Field           | Type               | Description                                                  |
 | --------------- | ------------------ | ------------------------------------------------------------ |
-| libraryId       | string             | Internal library ID which uniquely identifies a sample.      |
-| libraryName     | string             | The name of the sample                                       |
+| libraryId       | string             | Internal library ID which uniquely identifies a library.      |
+| libraryName     | string             | The name of the library                                       |
 | projectId       | string             | The ID which uniquely identifies a project.                  |
-| groupTag        | object             | A dictionary of group tags, for example, {"sampleId":"xyz", targetId":"abc"}. |
+| groupTag        | object             | A dictionary of group tags, for example, {"sampleName":"xyz", targetName":"abc"}. |
 | libraryType     | string             | The type of assay.                                           |
 | data            | object             | Data analysis results.                                       |
 | createTimestamp | string (date-time) | The time of sample registration                              |
