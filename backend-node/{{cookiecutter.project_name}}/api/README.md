@@ -18,9 +18,9 @@ Used to retrieve list of libraries in Stencil database based on some search crit
 |groupTag|object|A dictionary of group tags, for example, {"sampleId":"xyz", targetId":"abc"}.|
 |libraryType|string|The type of assay.|
 |libraryData|object|Data analysis results.|
-|createdBy|string|user name who created the object|
+|createdBy|string|userId who created the object|
 |createTimestamp|string (date-time)|The time of sample registration|
-|updatedBy|string|user name c|
+|updatedBy|string|userId who updated the object most recently|
 |updateTimestamp|string (date-time)|The time of last update.|
 |status|string|status code of the library, default "1" for active; "0" for "deprecated";|
 
