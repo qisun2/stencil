@@ -32,45 +32,31 @@ Used to retrieve list of libraries in Stencil database based on some search crit
 
 
 
-
-+ Response 200 (application/json)
++ Response (application/json)
 ```
 {
-    "@context": [
-        "https://stencil.org/jsonld/context/metadata.jsonld"
-    ],
-    "metadata": {
-        "pagination": {
-            "currentPage": 0,
-            "pageSize": 1000,
-            "totalCount": 10,
-            "totalPages": 1
-        },
-        "status": [
-            {
-                "message": "Request accepted, response successful",
-                "messageType": "INFO"
-            }
-        ]
-    },
-    "results": [
+	"count": 0,
+	"message" : "success",
+    "libraries": [
                 {
+                "_id": "9343lajsfasfda",
                 "libraryId": "1",
-                "libraryName": "1",
+                "sampleId": "",
                 "projectId": "1",
                 "groupTag": {"targetId":"abc"},
                 "libraryType": "RNAseq",
-                "data":{},
+                "libraryData":{},
+                "createdBy": "user1",
                 "createTimestamp":"2020-11-02",
+                "updatedBy": "user2",
                 "updateTimestamp":"2020-11-02",
-                "status":"active"             
-                
-                }
-    
+                "status":"1"           
+                }  
               ]
     }
 
 ```
+
 
 + Response 400 (application/json)
 ```
