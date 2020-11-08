@@ -15,7 +15,7 @@ Used to retrieve list of libraries in Stencil database based on some search crit
 |libraryId|string|Internal library ID which uniquely identifies a library.|
 |sampleId|string|The name of the sample. If not specified, sampleId copy the value from libraryId|
 |projectId|string|The ID which uniquely identifies a project.|
-|groupTag|object|A dictionary of group tags, for example, {"sampleId":"xyz", targetId":"abc"}.|
+|groupTag|object|A dictionary of group tags, for example, {"targetId":"abc" }.|
 |libraryType|string|The type of assay.|
 |libraryData|object|Data analysis results.|
 |createdBy|string|userId who created the object|
