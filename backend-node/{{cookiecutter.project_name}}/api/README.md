@@ -10,19 +10,19 @@ Used to retrieve list of libraries in Stencil database based on some search crit
 
 
 **Response Fields** 
-
 |Field|Type|Description|
 |---|---|---|
 |libraryId|string|Internal library ID which uniquely identifies a library.|
-|libraryName|string|The name of the library|
+|sampleId|string|The name of the sample. If not specified, sampleId copy the value from libraryId|
 |projectId|string|The ID which uniquely identifies a project.|
 |groupTag|object|A dictionary of group tags, for example, {"sampleId":"xyz", targetId":"abc"}.|
 |libraryType|string|The type of assay.|
-|data|object|Data analysis results.|
+|libraryData|object|Data analysis results.|
+|createdBy|string|user name who created the object|
 |createTimestamp|string (date-time)|The time of sample registration|
+|updatedBy|string|user name c|
 |updateTimestamp|string (date-time)|The time of last update.|
-|status|string|status of the library, for example, "active", "deprecated"|
-
+|status|string|status code of the library, default "1" for active; "0" for "deprecated";|
 
 
 
