@@ -7,6 +7,8 @@ API methods for post/update database in Stencil.
 
 Used to retrieve list of libraries in Stencil database based on some search criteria.
 
+
+
 **Response Fields** 
 
 |Field|Type|Description|
@@ -17,7 +19,7 @@ Used to retrieve list of libraries in Stencil database based on some search crit
 |projectId|string|User defined ID of a project.|
 |groupTag|object|A dictionary of group tags, for example, {"sampleId":"xyz", targetId":"abc"}.|
 |libraryType|string|The type of library, e.g. "RNAseq".|
-|libraryData|object|Data analysis results.|
+|libraryData|array|Data analysis results.|
 |createdBy|string|User name who created the object|
 |createTimestamp|string (date-time)|The time of sample registration.|
 |updatedBy|string|User name who late updated the object.|
@@ -39,26 +41,33 @@ Used to retrieve list of libraries in Stencil database based on some search crit
 + Response 200 (application/json)
 ```
 {
-	"count": 1,
 	"message" : "success",
-    "libraries": [
-                {
-                "_id": "9343lajsfasfda",
-                "libraryId": "1",
-                "sampleId": "",
-                "projectId": "1",
-                "groupTag": {"targetId":"abc"},
-                "libraryType": "RNAseq",
-                "libraryData":{},
-                "createdBy": "user1",
-                "createTimestamp":"2020-11-02",
-                "updatedBy": "user2",
-                "updateTimestamp":"2020-11-02",
-                "status":"1"           
-                }  
-              ]
-    }
-
+	"libraries": [
+					{"_id": "9343lajsfasfda",
+					"libraryId": "1",
+					"sampleId": "1",
+					"libraryDescription": "",
+					"projectId": "1",
+					"groupTag": {"targetId":"abc"},
+					"libraryType": "RNAseq",
+					"libraryData":[
+                            {	"name": "tag-pileup-raw-data",
+                            	"genome" : "sacCer3_cegr",
+                           		"workflowId": "1cd8e2f6b131e891",
+                           		"workflowStepId": "180208b3deba8d04",
+                           		"dataType": "txt",
+                           		"URL": "http://xxx.xxx.xxx/xxx",
+                           		"updateTimestamp":"2020-11-02",
+                            }
+						],
+					"createdBy": "user1",
+					"createTimestamp":"2020-11-02",
+					"updatedBy": "user2",
+					"updateTimestamp":"2020-11-02",
+					"status":"1"           
+					}  
+				]
+ }
 ```
 
 ### Post - /libraries [POST /libraries]
@@ -74,7 +83,7 @@ Call to register the event of a library being taken. Library ID is assigned as a
 |projectId|string|User defined ID of a project.|
 |groupTag|object|A dictionary of group tags, for example, {"sampleId":"xyz", targetId":"abc"}.|
 |libraryType|string|The type of library, e.g. "RNAseq".|
-|libraryData|object|Data analysis results.|
+|libraryData|array|Data analysis results.|
 
 **Response Fields** 
 
@@ -86,7 +95,7 @@ Call to register the event of a library being taken. Library ID is assigned as a
 |projectId|string|User defined ID of a project.|
 |groupTag|object|A dictionary of group tags, for example, {"sampleId":"xyz", targetId":"abc"}.|
 |libraryType|string|The type of library, e.g. "RNAseq".|
-|libraryData|object|Data analysis results.|
+|libraryData|array|An array of data object associated with the library|
 |createdBy|string|User name who created the object|
 |createTimestamp|string (date-time)|The time of sample registration.|
 |updatedBy|string|User name who late updated the object.|
@@ -99,38 +108,55 @@ Call to register the event of a library being taken. Library ID is assigned as a
 
 + Request (application/json)
 ```
-[
-      {
-                "libraryId": "1",
-                "sampleId": "",
-                "projectId": "1",
-                "groupTag": {"targetId":"abc"},
-                "libraryType": "RNAseq",
-                "libraryData":{},                                   
-      }
-]
+{
+    "libraryId": "1",
+    "sampleId": "1",
+    "libraryDescription": "",
+    "projectId": "1",
+    "groupTag": {"targetId":"abc"},
+    "libraryType": "RNAseq",
+    "libraryData":[
+        {
+        "name": "tag-pileup-raw-data",
+        "genome" : "sacCer3_cegr",
+        "workflowId": "1cd8e2f6b131e891",
+        "workflowStepId": "180208b3deba8d04",
+        "dataType": "txt",
+        "URL": "http://128.84.9.200:8080/datasets/579ae69ccbd17e45/display?preview=True",
+        }
+    ],
+}  
 ```
 
 + Response 200 (application/json)
 ```
 {
-	"count": 1,
 	"message" : "success",
     "libraries": [
-                {
-                "_id": "9343lajsfasfda",
-                "libraryId": "1",
-                "sampleId": "1",
-                "projectId": "1",
-                "groupTag": {"targetId":"abc"},
-                "libraryType": "RNAseq",
-                "libraryData":{},
-                "createdBy": "user1",
-                "createTimestamp":"2020-11-02",
-                "updatedBy": "user2",
-                "updateTimestamp":"2020-11-02",
-                "status":"1"           
-                }  
+                    {
+                        "_id": "9343lajsfasfda",
+                        "libraryId": "1",
+                        "sampleId": "1",
+                        "libraryDescription": "",
+                        "projectId": "1",
+                        "groupTag": {"targetId":"abc"},
+                        "libraryType": "RNAseq",
+                        "libraryData":[
+                            {
+                                "name": "tag-pileup-raw-data",
+                                "genome" : "sacCer3_cegr",
+                                "workflowId": "1cd8e2f6b131e891",
+                                "workflowStepId": "180208b3deba8d04",
+                                "dataType": "xxxxx",
+                                "URL": "xxxxxx",
+                             }
+                        ],
+                        "createdBy": "user1",
+                        "createTimestamp":"2020-11-02",
+                        "updatedBy": "user1,
+                        "updateTimestamp":"2020-11-02",
+                        "status":"1"           
+                    }  
               ]
     }
 
