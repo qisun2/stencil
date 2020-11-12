@@ -46,9 +46,11 @@ app.use(compression());
 
 // add routes
 const sampleRoutes = require("./api/routes/samples");
+const libraryRoutes = require("./api/routes/libraries");
 
 // adding static resources
-app.use("/images", express.static("{{cookiecutter.data_resources}}"));
+app.use("/images", express.static("./sampleData/Images"));
+app.use("/libimages", express.static("./libData/Images"));
 
 // adding helmet
 app.use(helmet());
@@ -62,6 +64,7 @@ app.use(bodyParser.json({ limit: "10mb", extended: true }));
 
 // let express use the specific routes
 app.use("/samples", sampleRoutes);
+app.use("/libraries", libraryRoutes);
 
 // handling default route errors
 app.use((req, res, next) => {
