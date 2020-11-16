@@ -7,6 +7,7 @@ const librariesController = require("../controllers/librariesController");
 // GET
 // retrieve all libraries
 router.get("/", librariesController.getAllLibraryMetaInfo);
+router.get("/dbid/:dbid", librariesController.queryLibraryDataById);
 
 
 // POST

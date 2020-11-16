@@ -11,6 +11,7 @@ const getURL = process.env.PUBLIC_ENDPOINT;
 // API FUNCTIONS
 
 exports.getAllLibraryMetaInfo = (req, res, next) => {
+  console.log("get all");
   myLib.find()
     .exec()
     .then(docs => {
@@ -43,6 +44,50 @@ exports.getAllLibraryMetaInfo = (req, res, next) => {
 };
 
 
+exports.queryLibraryDataById = (req, res, next) => {
+  const responseMsg = {
+    count:0,
+    message: "",
+    libraries: []
+  };
+  queryId = req.params.dbid;
+  console.log("query the db");
+  console.log(queryId);
+  myLib.find({'_id': queryId})
+    .exec()
+    .then(docs => {
+      returnMessage = "";
+      const response = {
+        count: docs.length,
+        message: returnMessage,
+        libraries: docs.map(doc => {
+          return {
+            dbId: doc._id,
+            libraryId: doc.libraryId,
+            sampleId: doc.sampleId,
+            projectId: doc.projectId,
+            groupTag: doc.groupTag,
+            libraryData: doc.libraryData,
+            libraryType: doc.libraryType,
+            createdBy: doc.createdBy,
+            createTimestamp : doc.createTimestamp,
+            updatedBy : doc.updatedBy,
+            updateTimestamp : doc.updateTimestamp,
+            status: doc.status
+          };
+        })
+      };
+      res.status(200).json(response);
+    })
+    .catch(err => {
+      console.log(err);
+      responseMsg["message"] = err;
+      res.status(500).json(responseMsg);
+    });
+};
+
+
+
 exports.createNewLibrary = (req, res, next) => {
 
   const responseMsg = {
@@ -59,7 +104,7 @@ exports.createNewLibrary = (req, res, next) => {
 
   if (req.body.sampleId === undefined) 
   {
-    req.sampleId = req.libraryId;
+    req.body.sampleId = req.libraryId;
   }
 
   if (req.body.projectId === undefined) 
@@ -98,8 +143,8 @@ exports.createNewLibrary = (req, res, next) => {
   //verify the libraryData array in the posted library
   postedlibraryData.forEach(element => {
       ccc ++;
-      if (element.plotId === undefined){
-        responseMsg["message"] = `The libraryData element # ${ccc} does not have the required "plotId" key!!`;
+      if (element.layoutId === undefined){
+        responseMsg["message"] = `The libraryData element # ${ccc} does not have the required "layoutId" key!!`;
         res.status(500).json(responseMsg);
         return;
       }
@@ -110,13 +155,13 @@ exports.createNewLibrary = (req, res, next) => {
         return;
       }
 
-      // check whether two libraryData elements have the same element.plotId + "$" +  element.workflowStepId
-      if (libraryDataNameDict[element.plotId + "$" +  element.workflowStepId] !== undefined) {
-        responseMsg["message"] = `The combination key plotID and workflowStepId is not unique for this library!`;
+      // check whether two libraryData elements have the same element.layoutId + "$" +  element.workflowStepId
+      if (libraryDataNameDict[element.layoutId + "$" +  element.workflowStepId] !== undefined) {
+        responseMsg["message"] = `The combination key layoutId and workflowStepId is not unique for this library!`;
         res.status(500).json(responseMsg);
         return;
       }
-      libraryDataNameDict[element.plotId + "$" +  element.workflowStepId] = 1;
+      libraryDataNameDict[element.layoutId + "$" +  element.workflowStepId] = 1;
       element.dataTimeStamp = Date.now();
       element.dataEnteredBy = submittedBy;
     }
@@ -137,14 +182,14 @@ exports.createNewLibrary = (req, res, next) => {
         var docChangedFlag = 0;
 
         //check any new or updated libraryData element
-        //based on workflowStepId and plotId
+        //based on workflowStepId and layoutId
         postedlibraryData.forEach(postedNewDataElement => {
-            newDataPlotId = postedNewDataElement.plotId;
+            newDataLayoutId = postedNewDataElement.layoutId;
             newDataWordflowStepId = postedNewDataElement.workflowStepId;
             var newFlag = 1;
             for (var i = 0; i < doc.libraryData.length; i++)
             {
-              if ((doc.libraryData[i].plotId === newDataPlotId) && (doc.libraryData[i].workflowStepId === newDataWordflowStepId))
+              if ((doc.libraryData[i].layoutId === newDataLayoutId) && (doc.libraryData[i].workflowStepId === newDataWordflowStepId))
               {
                 newFlag =0;
                 docChangedFlag =1;
