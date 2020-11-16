@@ -14,7 +14,9 @@ import LinearProgress from "@material-ui/core/LinearProgress";
 import Navbar from "./Components/Navbar";
 import ExploreGrid from "./Components/ExploreGrid";
 import LandingPage from "./Components/LandingPage";
+import LibrariesPage from "./Components/LibrariesPage";
 import Sample from "./Components/Sample";
+import Library from "./Components/showLibrary"
 import Help from "./Components/Help";
 
 // Configuration
@@ -98,17 +100,38 @@ function compare(a, b) {
   return comparison;
 }
 
+// simple compare function to sort search suggestions
+function compareByLabel(a, b) {
+  // Use toUpperCase() to ignore character casing
+  const itemA = a.label.toUpperCase();
+  const itemB = b.label.toUpperCase();
+
+  let comparison = 0;
+  if (itemA > itemB) {
+    comparison = 1;
+  } else if (itemA < itemB) {
+    comparison = -1;
+  }
+  return comparison;
+}
+
 class App extends Component {
   state = {
     isThemeLight: true,
     searchOptions: [],
+    allLibraryList:[],
     data: null
   };
 
   componentDidMount() {
     // Retrieve all samples.
+    const apiBaseURL = Config.settings.apiURL;
+    const sampleEndPint = Config.settings.samplesEndpoint;
+    const libraryEndPoint = Config.settings.librariesEndPoint;
+
+
     axios
-      .get(Config.settings.apiURL + Config.settings.samplesEndpoint)
+      .get(apiBaseURL + sampleEndPint)
       .then(res => {
         const targets = res.data.samples.map(sample => {
           return sample.target;
@@ -124,12 +147,37 @@ class App extends Component {
         // sort the items
         items.sort(compare);
 
-        this.setState({ data: res.data.samples, searchOptions: items });
+        this.setState({ data: res.data.samples, searchOptions: items});
         // console.log(items);
       })
       .catch(err => {
         console.log(err);
       });
+
+    axios
+      .get(apiBaseURL + libraryEndPoint)
+      .then(res => {
+        const libList = res.data.libraries.map(library => {
+          return { "dbid": library.dbId, "libid": library.libraryId };
+        });
+        //  create an array of unique targets
+
+        // create the search options; [replace with existing search endpoint in future]
+        const items = [];
+        for (let i = 0; i < libList.length; i++) {
+          items.push({ value: libList[i].dbid, label: libList[i].libid });
+        }
+        // sort the items
+        items.sort(compareByLabel);
+
+        this.setState({allLibraryList: items });
+        // console.log(items);
+      })
+      .catch(err => {
+        console.log(err);
+      });
+
+    
   }
 
   render() {
@@ -138,7 +186,8 @@ class App extends Component {
 
     const appData = {
       data: this.state.data,
-      searchOptions: this.state.searchOptions
+      searchOptions: this.state.searchOptions,
+      allLibraryList:  this.state.allLibraryList
     };
 
     const background = isThemeLight
@@ -155,13 +204,19 @@ class App extends Component {
           <BrowserRouter>
             {this.state.data ? (
               <DataProvider value={appData}>
-                <Navbar searchOptions={this.state.searchOptions} />
+                <Navbar searchOptions={this.state.allLibraryList}  defaultText="Search by library ID" handle="getLib" />
                 <Switch>
                   <Route exact path="/" component={LandingPage} />
+                  <Route exact path="/libraries" component={LibrariesPage} />
                   <Route
                     exact
                     path="/factor/:protein_name"
                     component={Sample}
+                  />
+                  <Route
+                    exact
+                    path="/getLib/:library_id"
+                    component={Library}
                   />
                   <Route exact path="/help/" component={Help} />
                   <Route exact path="/explore/" component={ExploreGrid} />
