@@ -57,7 +57,7 @@ const styles = theme => ({
   }
 });
 
-class SimpleLandingPage extends React.Component {
+class SimpleLibrariesPage extends React.Component {
   // using the context
   static contextType = DataContext;
 
@@ -66,44 +66,23 @@ class SimpleLandingPage extends React.Component {
     const currentYear = new Date().getFullYear();
 
     // Setting the title of the browser tab
-    document.title = "frontend";
+    document.title = "Samples in Stencil";
 
     return (
       <div className={classes.root}>
         <div className={classes.content}>
-          <Paper square>
-            <CardActions>
-              <Grid container alignItems={"center"} justify={"space-between"}>
-                <Grid item sm={"auto"}>
-                  <Link to="/explore">
-                    <Button size="small" color="primary">
-                      <ListIcon className={classes.leftIcon} />
-                      Explore
-                    </Button>
-                  </Link>
 
-                  <Link to="/help">
-                    <Button size="small" color="primary">
-                      <InfoIcon className={classes.leftIcon} />
-                      Help
-                    </Button>
-                  </Link>
-                </Grid>
-                <Grid item sm={"auto"} />
-              </Grid>
-            </CardActions>
-          </Paper>
 
           <Paper square>
             {/* Jumbotron or main message */}
             <div className={classes.jumbotron}>
               <div className={classes.container}>
                 <Typography variant="h2" gutterBottom>
-                  frontend
+                  Sample libraries
                 </Typography>
 
                 <Typography variant="subtitle1" gutterBottom>
-                  tagline
+                  Browse Stencil Libraries
                 </Typography>
                 <Divider />
                 <Typography variant="caption" component="p" gutterBottom>
@@ -120,7 +99,7 @@ class SimpleLandingPage extends React.Component {
             >
               {/* SearchBar */}
               <Grid item>
-                <Search suggestions={this.context.searchOptions} defaultText="Search by protein target" />
+                <Search suggestions={this.context.allLibraryList} defaultText="Browse by library ID" handle="getLib" />
               </Grid>
 
               <Grid item></Grid>
@@ -136,9 +115,7 @@ class SimpleLandingPage extends React.Component {
                   <Divider />
                   <br />
                   <Typography variant="body1">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt odit sit, error ad enim iste ullam harum perferendis aliquid ipsam, laboriosam facere nam voluptates. Magnam numquam consequatur debitis corrupti placeat Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt repudiandae velit voluptatem vitae dignissimos aliquid distinctio in. Porro aspernatur obcaecati eos rerum assumenda quae quas natus, delectus excepturi magnam perspiciatis
-
-                    
+                    Stencil is a web based system for visualizing results of data processing pipeline.
                   </Typography>
                   <br />
                   <Divider />
@@ -188,8 +165,8 @@ class SimpleLandingPage extends React.Component {
   }
 }
 
-SimpleLandingPage.propTypes = {
+SimpleLibrariesPage.propTypes = {
   classes: PropTypes.object.isRequired
 };
 
-export default withStyles(styles)(SimpleLandingPage);
+export default withStyles(styles)(SimpleLibrariesPage);

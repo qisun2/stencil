@@ -32,15 +32,11 @@ class LandingPage extends React.Component {
     const { classes } = this.props;
     const location = this.props.location.pathname;
 
-    return location !== "/" ? (
+    return ((location !== "/") && (location !== "/libraries")) ? (
       <Paper
         square
         elevation={0}
-        className={
-          this.props.location.pathname === "/"
-            ? classes.appBar
-            : classes.appBar2
-        }
+        className={classes.appBar2}
       >
         <CardActions>
           <Grid container alignItems={"center"} justify={"space-between"}>
@@ -55,14 +51,7 @@ class LandingPage extends React.Component {
                 <Grid item sm={"auto"} />
 
                 <Grid item sm={"auto"}>
-                  {this.props.location.pathname === "/" ? (
-                    " "
-                  ) : !this.props.location.pathname.startsWith("/help") &&
-                    !this.props.location.pathname.startsWith("/explore") ? (
-                    <Search suggestions={this.props.searchOptions} />
-                  ) : (
-                    " "
-                  )}
+                <Search suggestions={this.props.searchOptions} defaultText={this.props.defaultText} handle={this.props.handle} />
                 </Grid>
               </Grid>
             </Grid>
@@ -72,18 +61,10 @@ class LandingPage extends React.Component {
             </Grid>
 
             <Grid item sm={"auto"}>
-              <Link to="/">
+              <Link to="/libraries">
                 <Tooltip title="Home" aria-label="home">
                   <IconButton color="primary">
                     <HomeIcon />
-                  </IconButton>
-                </Tooltip>
-              </Link>
-
-              <Link to="/explore">
-                <Tooltip title="Explore" aria-label="explore">
-                  <IconButton color="primary">
-                    <ListIcon />
                   </IconButton>
                 </Tooltip>
               </Link>

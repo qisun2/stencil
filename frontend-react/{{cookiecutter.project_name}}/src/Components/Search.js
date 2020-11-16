@@ -238,12 +238,17 @@ class SearchBar extends React.Component {
   };
 
   handleChangeSingle = item => {
+    var { handle} = this.props;
+    if (handle === undefined)
+    {
+      handle ="factor";
+    }
     this.setState({ single: item });
     //Do nothing when the value is null
     if (!item) {
       console.log(item);
     } else {
-      this.props.history.push("/factor/" + item.value);
+      this.props.history.push("/" + handle + "/" + item.value);
     }
   };
 
@@ -252,7 +257,7 @@ class SearchBar extends React.Component {
   };
 
   render() {
-    const { classes, theme, suggestions } = this.props;
+    const { classes, theme, suggestions, defaultText} = this.props;
 
     const selectStyles = {
       input: base => ({
@@ -280,7 +285,7 @@ class SearchBar extends React.Component {
               styles={selectStyles}
               inputId="react-select-single"
               TextFieldProps={textfieldprops}
-              placeholder="Search your favourite target"
+              placeholder={defaultText}
               options={suggestions}
               components={components}
               value={this.state.single}
