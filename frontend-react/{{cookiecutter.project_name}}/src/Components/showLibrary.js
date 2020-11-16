@@ -6,12 +6,7 @@ import PropTypes from "prop-types";
 import { withStyles } from "@material-ui/core/styles";
 import Card from "@material-ui/core/Card";
 import Typography from "@material-ui/core/Typography";
-import Divider from "@material-ui/core/Divider";
-import Grid from "@material-ui/core/Grid";
-import TrackHubIcon from "@material-ui/icons/AssessmentOutlined";
-import InfoIcon from "@material-ui/icons/InfoOutlined";
-import Button from "@material-ui/core/Button";
-import CardActions from "@material-ui/core/CardActions";
+
 
 // subComponents
 import HeaderInfo from "./SubComponents/LibraryHeaderInfo";
@@ -112,7 +107,7 @@ class Library extends Component {
 
   render() {
     const { classes } = this.props;
-    const { loading, message, dbid } = this.state;
+    const { loading, message } = this.state;
 
     const post = loading ? (
       <Typography component="div" className={classes.center}>

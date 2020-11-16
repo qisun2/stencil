@@ -54,7 +54,7 @@ class ImageArray extends React.Component {
                 this.props.data.map(item => {
                   return (
                     <Grid item>
-                    <img src={item.URL} title={item.plotTitle} />
+                    <img src={item.URL} alt={item.plotTitle} title={item.plotTitle} />
                     </Grid>
                   );
                 })

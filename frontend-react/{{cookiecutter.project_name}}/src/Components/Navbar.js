@@ -13,7 +13,6 @@ import { Link, withRouter } from "react-router-dom";
 import Search from "./Search";
 import DataContext from "./DataContext";
 import InfoIcon from "@material-ui/icons/InfoOutlined";
-import ListIcon from "@material-ui/icons/ViewList";
 
 // component styles
 const styles = {
