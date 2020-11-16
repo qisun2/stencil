@@ -3,7 +3,7 @@
 
 API methods for post/update database in Stencil.
 
-### Get - /libraries [GET /libraries {?libraryId}{?projectId}]
+### Get - /libraries [GET /libraries  /libraries/dbid/:dbid]
 
 Used to retrieve list of libraries in Stencil database based on some search criteria.
 
@@ -51,7 +51,8 @@ Used to retrieve list of libraries in Stencil database based on some search crit
 					"groupTag": {"targetId":"abc"},
 					"libraryType": "RNAseq",
 					"libraryData":[
-                            {	"plotId": "tag-pileup-raw-data",
+                            {	"layoutId": "tag-pileup-raw-data",
+                            	"layoutTitle": "Tag Pileup",
                             	"workflowStepId": "180208b3deba8d04",
                             	"workflowId": "1cd8e2f6b131e891",
                             	"genome" : "sacCer3_cegr",	
@@ -116,10 +117,11 @@ Call to register the event of a library being taken. Library ID is assigned as a
     "libraryType": "RNAseq",
     "libraryData":[
         {
-        "plotId": "tag-pileup-raw-data",
-        "genome" : "sacCer3_cegr",
+        "layoutId": "tag-pileup-raw-data",
+        "layoutTitle": "tag pileup",
         "workflowId": "1cd8e2f6b131e891",
         "workflowStepId": "180208b3deba8d04",
+        "genome" : "sacCer3_cegr",
         "dataType": "txt",
         "URL": "http://128.84.9.200:8080/datasets/579ae69ccbd17e45/display?preview=True",
         }
@@ -142,10 +144,11 @@ Call to register the event of a library being taken. Library ID is assigned as a
                         "libraryType": "RNAseq",
                         "libraryData":[
                             {
-                                "plotId": "tag-pileup-raw-data",
-                                "genome" : "sacCer3_cegr",
+                                "layoutId": "tag-pileup-raw-data",
+                                "layoutTitle": "tag pileup",
                                 "workflowId": "1cd8e2f6b131e891",
                                 "workflowStepId": "180208b3deba8d04",
+                                "genome" : "sacCer3_cegr",
                                 "dataType": "xxxxx",
                                 "URL": "xxxxxx",
                              }
