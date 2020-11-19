@@ -66,30 +66,53 @@ class LayoutList extends React.Component {
 
     // create sections based on layout
     let libraryDataArray = this.state.libraryData;
-    let layoutIdToArray = [];
+
     let layoutIdToTitle = {};
+    let layoutIdToData = {};
+    let layoutTabs = {};
 
     for (let item of libraryDataArray) {
 
-      if (! (item.layoutId in layoutIdToArray))
+      if (! (item.layoutId in layoutIdToTitle))
       {
-        layoutIdToArray[item.layoutId] = []
         layoutIdToTitle[item.layoutId] = item.layoutTitle;
+        layoutIdToData[item.layoutId] = {};
+        layoutTabs[item.layoutId] = {};   
       }
-      layoutIdToArray[item.layoutId].push(item);
+
+      if (item.tabId ===""){
+        item.tabId = "-";
+      }
+
+      if (! (item.tabId in layoutIdToData[item.layoutId]))
+      {
+        layoutIdToData[item.layoutId][item.tabId] = [];
+        layoutTabs[item.layoutId][item.tabId] = item.tabTitle? item.tabTitle: item.tabId;
+      }
+
+      layoutIdToData[item.layoutId][item.tabId].push(item);
     }
 
     for (let layoutId of Object.keys(layoutIdToTitle).sort()) 
     {
-      
+      let layoutTitle = layoutIdToTitle[layoutId];
+      let tabTitles = [];
+      let tabData = [];
+
+      for (let myTabId of Object.keys(layoutTabs[layoutId]).sort())
+      {
+        tabTitles.push(layoutTabs[layoutId][myTabId]);
+        tabData.push(layoutIdToData[layoutId][myTabId]);
+      }
       switch (layoutId) {
-        case "image_array":
+        case "imageArray":
           content.push(
             <Grid item key={layoutId}>
             <span id="section4" />
             <ImageArray
-              data={layoutIdToArray[layoutId]}
-              title={layoutIdToTitle[layoutId]}
+              title={layoutTitle}
+              tabtitles={tabTitles}
+              data={tabData}
             />
             </Grid>
           );

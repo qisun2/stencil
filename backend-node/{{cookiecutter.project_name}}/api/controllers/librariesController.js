@@ -149,19 +149,23 @@ exports.createNewLibrary = (req, res, next) => {
         return;
       }
 
-      if (element.workflowStepId === undefined){
-        responseMsg["message"] = `The libraryData element # ${ccc} does not have the required "workflowStepId" key!!`;
+      if (element.stepId === undefined){
+        responseMsg["message"] = `The libraryData element # ${ccc} does not have the required "stepId" key!!`;
         res.status(500).json(responseMsg);
         return;
       }
 
-      // check whether two libraryData elements have the same element.layoutId + "$" +  element.workflowStepId
-      if (libraryDataNameDict[element.layoutId + "$" +  element.workflowStepId] !== undefined) {
-        responseMsg["message"] = `The combination key layoutId and workflowStepId is not unique for this library!`;
+      if (element.tabId === undefined){
+        element.tabId="";
+      }
+
+      // check whether two libraryData elements have the same element.layoutId + "$" +  element.stepId
+      if (libraryDataNameDict[element.layoutId + "$" +  element.tabId + "$" + element.stepId] !== undefined) {
+        responseMsg["message"] = `The combination key layoutId, tabId and stepId is not unique for this library!`;
         res.status(500).json(responseMsg);
         return;
       }
-      libraryDataNameDict[element.layoutId + "$" +  element.workflowStepId] = 1;
+      libraryDataNameDict[element.layoutId + "$" +  element.tabId + "$" + element.stepId] = 1;
       element.dataTimeStamp = Date.now();
       element.dataEnteredBy = submittedBy;
     }
@@ -182,14 +186,15 @@ exports.createNewLibrary = (req, res, next) => {
         var docChangedFlag = 0;
 
         //check any new or updated libraryData element
-        //based on workflowStepId and layoutId
+        //based on stepId, tabId and layoutId
         postedlibraryData.forEach(postedNewDataElement => {
-            newDataLayoutId = postedNewDataElement.layoutId;
-            newDataWordflowStepId = postedNewDataElement.workflowStepId;
+            let newDataLayoutId = postedNewDataElement.layoutId;
+            let newDataTabId = (postedNewDataElement.tabId === undefined)? "":postedNewDataElement.tabId;
+            let newDataStepId = postedNewDataElement.stepId;
             var newFlag = 1;
             for (var i = 0; i < doc.libraryData.length; i++)
             {
-              if ((doc.libraryData[i].layoutId === newDataLayoutId) && (doc.libraryData[i].workflowStepId === newDataWordflowStepId))
+              if ((doc.libraryData[i].layoutId === newDataLayoutId) && (doc.libraryData[i].stepId === newDataStepId) && (doc.libraryData[i].tabId === newDataTabId))
               {
                 newFlag =0;
                 docChangedFlag =1;
