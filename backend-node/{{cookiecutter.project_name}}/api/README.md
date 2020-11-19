@@ -83,7 +83,7 @@ Call to register the event of a library being taken. Library ID is assigned as a
 |projectId|string (required)|User defined ID of a project.|
 |groupTag|object|A dictionary of group tags, for example, {"sampleId":"xyz", targetId":"abc"}.|
 |libraryType|string|The type of library, e.g. "RNAseq".|
-|libraryData|array|Data analysis results. Each element is a dictionary  {string:string}, with at least two required keys "plotId" and "workflowStepId".|
+|libraryData|array|Data analysis results. Each element is a dictionary  {string:string}, with at least two required keys "layoutId", "stepId" and optional "tabId".|
 
 **Response Fields** 
 
@@ -117,15 +117,17 @@ Call to register the event of a library being taken. Library ID is assigned as a
     "libraryType": "RNAseq",
     "libraryData":[
         {
-        "layoutId": "tag-pileup-raw-data",
-        "layoutTitle": "tag pileup",
+        "layoutId": "imageArray",
+        "layoutTitle": "Generic Layout",
+        "tabId": "Tab1",
+        "tabTitle": "Tab 1",
+        "stepId": "1",
         "workflowId": "1cd8e2f6b131e891",
-        "workflowStepId": "180208b3deba8d04",
-        "genome" : "sacCer3_cegr",
-        "dataType": "txt",
-        "URL": "http://128.84.9.200:8080/datasets/579ae69ccbd17e45/display?preview=True",
+        "dataType": "png",
+        "dataLabel": "fig1.1"
+        "URL": "http://128.84.9.200:8080/datasets/7eee9617b2705f10/display?preview=True",
         }
-    ],
+    ]
 }  
 ```
 
@@ -144,15 +146,17 @@ Call to register the event of a library being taken. Library ID is assigned as a
                         "libraryType": "RNAseq",
                         "libraryData":[
                             {
-                                "layoutId": "tag-pileup-raw-data",
-                                "layoutTitle": "tag pileup",
-                                "workflowId": "1cd8e2f6b131e891",
-                                "workflowStepId": "180208b3deba8d04",
-                                "genome" : "sacCer3_cegr",
-                                "dataType": "xxxxx",
-                                "URL": "xxxxxx",
-                             }
-                        ],
+                            "layoutId": "imageArray",
+                            "layoutTitle": "Generic Layout",
+                            "tabId": "Tab1",
+                            "tabTitle": "Tab 1",
+                            "stepId": "1",
+                            "workflowId": "1cd8e2f6b131e891",
+                            "dataType": "png",
+                            "dataLabel": "fig1.1"
+                            "URL": "http://128.84.9.200:8080/datasets/7eee9617b2705f10/display?preview=True",
+                            }
+                        ]
                         "createdBy": "user1",
                         "createTimestamp":"2020-11-02",
                         "updatedBy": "user1,
