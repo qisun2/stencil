@@ -75,7 +75,7 @@ class LayoutList extends React.Component {
 
       if (! (item.layoutId in layoutIdToTitle))
       {
-        layoutIdToTitle[item.layoutId] = item.layoutTitle;
+        layoutIdToTitle[item.layoutId] = item.layoutTitle? item.layoutTitle: item.layoutId;
         layoutIdToData[item.layoutId] = {};
         layoutTabs[item.layoutId] = {};   
       }
@@ -102,26 +102,18 @@ class LayoutList extends React.Component {
       for (let myTabId of Object.keys(layoutTabs[layoutId]).sort())
       {
         tabTitles.push(layoutTabs[layoutId][myTabId]);
-        tabData.push(layoutIdToData[layoutId][myTabId]);
+        tabData.push(layoutIdToData[layoutId][myTabId].sort((x, y) => {return (x["stepId"] > y["stepId"])?1:-1}));
       }
-      switch (layoutId) {
-        case "imageArray":
-          content.push(
-            <Grid item key={layoutId}>
-            <span id="section4" />
-            <ImageArray
-              title={layoutTitle}
-              tabtitles={tabTitles}
-              data={tabData}
-            />
-            </Grid>
-          );
-          break;
-
-        default:
-          console.log("Missing a layout type " + layoutId);
-          break;
-      }
+      content.push(
+        <Grid item key={layoutId}>
+        <span id="section4" />
+        <ImageArray
+          title={layoutTitle}
+          tabtitles={tabTitles}
+          data={tabData}
+        />
+        </Grid>
+      );
     }
 
     return (
