@@ -2,7 +2,6 @@
 # base image from apline (linux) with nginx
 FROM nginx:alpine
 
-LABEL maintainer="{{cookiecutter.docker_username}}"
 
 # Copy the build into the container
 COPY /build /usr/share/nginx/html

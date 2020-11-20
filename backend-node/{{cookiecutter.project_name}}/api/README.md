@@ -83,7 +83,7 @@ Call to register the event of a library being taken. Library ID is assigned as a
 |projectId|string (required)|User defined ID of a project.|
 |groupTag|object|A dictionary of group tags, for example, {"sampleId":"xyz", targetId":"abc"}.|
 |libraryType|string|The type of library, e.g. "RNAseq".|
-|libraryData|array|Data analysis results. Each element is a dictionary  {string:string}, with at least two required keys "layoutId", "stepId" and optional "tabId".|
+|libraryData|array|Data analysis results. Each element is a dictionary  {string:string}, with at least two required keys "layoutId", "stepId" and optional field "tabId".  "layoutTitle" and "tabTitle" are optional. If not available, "layoutId" and "tabId" will be displayed.|
 
 **Response Fields** 
 
@@ -117,8 +117,8 @@ Call to register the event of a library being taken. Library ID is assigned as a
     "libraryType": "RNAseq",
     "libraryData":[
         {
-        "layoutId": "imageArray",
-        "layoutTitle": "Generic Layout",
+        "layoutId": "Heat Map 1",
+        "layoutTitle": "Heat Map 1",
         "tabId": "Tab1",
         "tabTitle": "Tab 1",
         "stepId": "1",

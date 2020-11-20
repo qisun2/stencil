@@ -6,7 +6,6 @@ require("dotenv").config();
 
 // requiring the samples model
 const Sample = require("../models/sampleModel");
-const getURL = process.env.PUBLIC_ENDPOINT;
 
 // API FUNCTIONS
 
@@ -253,15 +252,7 @@ exports.deleteSampleById = (req, res, next) => {
     .then(result => {
       console.log(result);
       res.status(200).json({
-        message: "Sample Deleted",
-        request: {
-          type: "POST",
-          url: getURL,
-          body: {
-            sampleId: "String",
-            target: "String"
-          }
-        }
+        message: "Sample Deleted"
       });
     })
     .catch(err => {

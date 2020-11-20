@@ -53,28 +53,28 @@
       "title": "Coding Features",
       "data": {
         "ChExMix": {
-          "heatmap1": "http://localhost:8081/images/CODING/12141_AllFeatures_Heatmap.png",
-          "heatmap2": "http://localhost:8081/images/CODING/12141_AllFeatures_Colorbar.png",
-          "heatmap3": "http://localhost:8081/images/CODING/12141_BoundFeatures_Heatmap.png",
-          "heatmap4": "http://localhost:8081/images/CODING/12141_BoundFeatures_Colorbar.png",
-          "heatmap5": "http://localhost:8081/images/CODING/12141_NFR_Composite.png",
-          "heatmap6": "http://localhost:8081/images/CODING/12141_NFR_Heatmap.png",
-          "heatmap7": "http://localhost:8081/images/CODING/12141_TSS_Composite.png",
-          "heatmap8": "http://localhost:8081/images/CODING/12141_TSS_Heatmap.png",
-          "heatmap9": "http://localhost:8081/images/CODING/12141_TES_Composite.png",
-          "heatmap10": "http://localhost:8081/images/CODING/12141_TES_Heatmap.png"
+          "heatmap1": "http://{{cookiecutter.api_url}}:{{cookiecutter.api_port}}/images/CODING/12141_AllFeatures_Heatmap.png",
+          "heatmap2": "http://{{cookiecutter.api_url}}:{{cookiecutter.api_port}}/images/CODING/12141_AllFeatures_Colorbar.png",
+          "heatmap3": "http://{{cookiecutter.api_url}}:{{cookiecutter.api_port}}/images/CODING/12141_BoundFeatures_Heatmap.png",
+          "heatmap4": "http://{{cookiecutter.api_url}}:{{cookiecutter.api_port}}/images/CODING/12141_BoundFeatures_Colorbar.png",
+          "heatmap5": "http://{{cookiecutter.api_url}}:{{cookiecutter.api_port}}/images/CODING/12141_NFR_Composite.png",
+          "heatmap6": "http://{{cookiecutter.api_url}}:{{cookiecutter.api_port}}/images/CODING/12141_NFR_Heatmap.png",
+          "heatmap7": "http://{{cookiecutter.api_url}}:{{cookiecutter.api_port}}/images/CODING/12141_TSS_Composite.png",
+          "heatmap8": "http://{{cookiecutter.api_url}}:{{cookiecutter.api_port}}/images/CODING/12141_TSS_Heatmap.png",
+          "heatmap9": "http://{{cookiecutter.api_url}}:{{cookiecutter.api_port}}/images/CODING/12141_TES_Composite.png",
+          "heatmap10": "http://{{cookiecutter.api_url}}:{{cookiecutter.api_port}}/images/CODING/12141_TES_Heatmap.png"
         },
         "Subsector": {
-          "heatmap1": "http://localhost:8081/images/CODING/12141_AllFeatures_Heatmap.png",
-          "heatmap2": "http://localhost:8081/images/CODING/12141_AllFeatures_Colorbar.png",
-          "heatmap3": "http://localhost:8081/images/CODING/12141_EnrichedFeatures_Heatmap.png",
-          "heatmap4": "http://localhost:8081/images/CODING/12141_EnrichedFeatures_Colorbar.png",
-          "heatmap5": "http://localhost:8081/images/CODING/12141_EnrichedNFR_Composite.png",
-          "heatmap6": "http://localhost:8081/images/CODING/12141_EnrichedNFR_Heatmap.png",
-          "heatmap7": "http://localhost:8081/images/CODING/12141_EnrichedTSS_Composite.png",
-          "heatmap8": "http://localhost:8081/images/CODING/12141_EnrichedTSS_Heatmap.png",
-          "heatmap9": "http://localhost:8081/images/CODING/12141_EnrichedTES_Composite.png",
-          "heatmap10": "http://localhost:8081/images/CODING/12141_EnrichedTES_Heatmap.png"
+          "heatmap1": "http://{{cookiecutter.api_url}}:{{cookiecutter.api_port}}/images/CODING/12141_AllFeatures_Heatmap.png",
+          "heatmap2": "http://{{cookiecutter.api_url}}:{{cookiecutter.api_port}}/images/CODING/12141_AllFeatures_Colorbar.png",
+          "heatmap3": "http://{{cookiecutter.api_url}}:{{cookiecutter.api_port}}/images/CODING/12141_EnrichedFeatures_Heatmap.png",
+          "heatmap4": "http://{{cookiecutter.api_url}}:{{cookiecutter.api_port}}/images/CODING/12141_EnrichedFeatures_Colorbar.png",
+          "heatmap5": "http://{{cookiecutter.api_url}}:{{cookiecutter.api_port}}/images/CODING/12141_EnrichedNFR_Composite.png",
+          "heatmap6": "http://{{cookiecutter.api_url}}:{{cookiecutter.api_port}}/images/CODING/12141_EnrichedNFR_Heatmap.png",
+          "heatmap7": "http://{{cookiecutter.api_url}}:{{cookiecutter.api_port}}/images/CODING/12141_EnrichedTSS_Composite.png",
+          "heatmap8": "http://{{cookiecutter.api_url}}:{{cookiecutter.api_port}}/images/CODING/12141_EnrichedTSS_Heatmap.png",
+          "heatmap9": "http://{{cookiecutter.api_url}}:{{cookiecutter.api_port}}/images/CODING/12141_EnrichedTES_Composite.png",
+          "heatmap10": "http://{{cookiecutter.api_url}}:{{cookiecutter.api_port}}/images/CODING/12141_EnrichedTES_Heatmap.png"
         }
       }
     },
@@ -83,16 +83,16 @@
       "title": "Non-coding Features",
       "data": {
         "ChExMix": {
-          "heatmap1": "http://localhost:8081/images/NONCODING/12141_CUT_Heatmap.png",
-          "heatmap2": "http://localhost:8081/images/NONCODING/12141_SUT_Heatmap.png",
-          "heatmap3": "http://localhost:8081/images/NONCODING/12141_XUT_Heatmap.png",
-          "heatmap4": "http://localhost:8081/images/NONCODING/12141_SRNA_Heatmap.png"
+          "heatmap1": "http://{{cookiecutter.api_url}}:{{cookiecutter.api_port}}/images/NONCODING/12141_CUT_Heatmap.png",
+          "heatmap2": "http://{{cookiecutter.api_url}}:{{cookiecutter.api_port}}/images/NONCODING/12141_SUT_Heatmap.png",
+          "heatmap3": "http://{{cookiecutter.api_url}}:{{cookiecutter.api_port}}/images/NONCODING/12141_XUT_Heatmap.png",
+          "heatmap4": "http://{{cookiecutter.api_url}}:{{cookiecutter.api_port}}/images/NONCODING/12141_SRNA_Heatmap.png"
         },
         "Subsector": {
-          "heatmap1": "http://localhost:8081/images/NONCODING/12141_EnrichedCUT_Heatmap.png",
-          "heatmap2": "http://localhost:8081/images/NONCODING/12141_EnrichedSUT_Heatmap.png",
-          "heatmap3": "http://localhost:8081/images/NONCODING/12141_EnrichedXUT_Heatmap.png",
-          "heatmap4": "http://localhost:8081/images/NONCODING/12141_EnrichedSRNA_Heatmap.png"
+          "heatmap1": "http://{{cookiecutter.api_url}}:{{cookiecutter.api_port}}/images/NONCODING/12141_EnrichedCUT_Heatmap.png",
+          "heatmap2": "http://{{cookiecutter.api_url}}:{{cookiecutter.api_port}}/images/NONCODING/12141_EnrichedSUT_Heatmap.png",
+          "heatmap3": "http://{{cookiecutter.api_url}}:{{cookiecutter.api_port}}/images/NONCODING/12141_EnrichedXUT_Heatmap.png",
+          "heatmap4": "http://{{cookiecutter.api_url}}:{{cookiecutter.api_port}}/images/NONCODING/12141_EnrichedSRNA_Heatmap.png"
         }
       }
     },
@@ -100,11 +100,11 @@
       "layout": "horizontalImage",
       "title": "Other Features",
       "data": {
-        "heatmap1": "http://localhost:8081/images/OTHER/12141_TRNA_Heatmap.png",
-        "heatmap2": "http://localhost:8081/images/OTHER/12141_LTR_Heatmap.png",
-        "heatmap3": "http://localhost:8081/images/OTHER/12141_ARS_Heatmap.png",
-        "heatmap4": "http://localhost:8081/images/OTHER/12141_CENTROMERE_Heatmap.png",
-        "heatmap5": "http://localhost:8081/images/OTHER/12141_X-ELEMENT_Heatmap.png"
+        "heatmap1": "http://{{cookiecutter.api_url}}:{{cookiecutter.api_port}}/images/OTHER/12141_TRNA_Heatmap.png",
+        "heatmap2": "http://{{cookiecutter.api_url}}:{{cookiecutter.api_port}}/images/OTHER/12141_LTR_Heatmap.png",
+        "heatmap3": "http://{{cookiecutter.api_url}}:{{cookiecutter.api_port}}/images/OTHER/12141_ARS_Heatmap.png",
+        "heatmap4": "http://{{cookiecutter.api_url}}:{{cookiecutter.api_port}}/images/OTHER/12141_CENTROMERE_Heatmap.png",
+        "heatmap5": "http://{{cookiecutter.api_url}}:{{cookiecutter.api_port}}/images/OTHER/12141_X-ELEMENT_Heatmap.png"
       }
     },
     "motifImages": {
@@ -112,25 +112,25 @@
       "title": "Motif Analysis",
       "data": {
         "Motif 1": {
-          "motifLogo": "http://localhost:8081/images/MOTIF/12141_logo1.png",
-          "motifLogoReverse": "http://localhost:8081/images/MOTIF/12141_logo_rc1.png",
-          "motifFourColor": "http://localhost:8081/images/MOTIF/12141_Motif_1_fourcolor.png",
-          "motifComposite": "http://localhost:8081/images/MOTIF/12141_Motif_1_composite.png",
-          "motifHeatmap": "http://localhost:8081/images/MOTIF/12141_Motif_1_Heatmap.png"
+          "motifLogo": "http://{{cookiecutter.api_url}}:{{cookiecutter.api_port}}/images/MOTIF/12141_logo1.png",
+          "motifLogoReverse": "http://{{cookiecutter.api_url}}:{{cookiecutter.api_port}}/images/MOTIF/12141_logo_rc1.png",
+          "motifFourColor": "http://{{cookiecutter.api_url}}:{{cookiecutter.api_port}}/images/MOTIF/12141_Motif_1_fourcolor.png",
+          "motifComposite": "http://{{cookiecutter.api_url}}:{{cookiecutter.api_port}}/images/MOTIF/12141_Motif_1_composite.png",
+          "motifHeatmap": "http://{{cookiecutter.api_url}}:{{cookiecutter.api_port}}/images/MOTIF/12141_Motif_1_Heatmap.png"
         },
         "Motif 2": {
-          "motifLogo": "http://localhost:8081/images/MOTIF/12141_logo2.png",
-          "motifLogoReverse": "http://localhost:8081/images/MOTIF/12141_logo_rc2.png",
-          "motifFourColor": "http://localhost:8081/images/MOTIF/12141_Motif_2_fourcolor.png",
-          "motifComposite": "http://localhost:8081/images/MOTIF/12141_Motif_2_composite.png",
-          "motifHeatmap": "http://localhost:8081/images/MOTIF/12141_Motif_2_Heatmap.png"
+          "motifLogo": "http://{{cookiecutter.api_url}}:{{cookiecutter.api_port}}/images/MOTIF/12141_logo2.png",
+          "motifLogoReverse": "http://{{cookiecutter.api_url}}:{{cookiecutter.api_port}}/images/MOTIF/12141_logo_rc2.png",
+          "motifFourColor": "http://{{cookiecutter.api_url}}:{{cookiecutter.api_port}}/images/MOTIF/12141_Motif_2_fourcolor.png",
+          "motifComposite": "http://{{cookiecutter.api_url}}:{{cookiecutter.api_port}}/images/MOTIF/12141_Motif_2_composite.png",
+          "motifHeatmap": "http://{{cookiecutter.api_url}}:{{cookiecutter.api_port}}/images/MOTIF/12141_Motif_2_Heatmap.png"
         },
         "Motif 3": {
-          "motifLogo": "http://localhost:8081/images/MOTIF/12141_logo3.png",
-          "motifLogoReverse": "http://localhost:8081/images/MOTIF/12141_logo_rc3.png",
-          "motifFourColor": "http://localhost:8081/images/MOTIF/12141_Motif_3_fourcolor.png",
-          "motifComposite": "http://localhost:8081/images/MOTIF/12141_Motif_3_composite.png",
-          "motifHeatmap": "http://localhost:8081/images/MOTIF/12141_Motif_3_Heatmap.png"
+          "motifLogo": "http://{{cookiecutter.api_url}}:{{cookiecutter.api_port}}/images/MOTIF/12141_logo3.png",
+          "motifLogoReverse": "http://{{cookiecutter.api_url}}:{{cookiecutter.api_port}}/images/MOTIF/12141_logo_rc3.png",
+          "motifFourColor": "http://{{cookiecutter.api_url}}:{{cookiecutter.api_port}}/images/MOTIF/12141_Motif_3_fourcolor.png",
+          "motifComposite": "http://{{cookiecutter.api_url}}:{{cookiecutter.api_port}}/images/MOTIF/12141_Motif_3_composite.png",
+          "motifHeatmap": "http://{{cookiecutter.api_url}}:{{cookiecutter.api_port}}/images/MOTIF/12141_Motif_3_Heatmap.png"
         }
       }
     },
@@ -148,7 +148,7 @@
             "height": 100,
             "minHeight": 100,
             "maxHeight": 100,
-            "url": "http://localhost:8081/images/IGVBrowser/PROTEIN_forwardStrand.bw",
+            "url": "http://{{cookiecutter.api_url}}:{{cookiecutter.api_port}}/images/IGVBrowser/PROTEIN_forwardStrand.bw",
             "color": "rgb(0, 0, 150)"
           },
           {
@@ -159,7 +159,7 @@
             "height": 40,
             "minHeight": 40,
             "maxHeight": 40,
-            "url": "http://localhost:8081/images/IGVBrowser/PROTEIN_peaks.bb"
+            "url": "http://{{cookiecutter.api_url}}:{{cookiecutter.api_port}}/images/IGVBrowser/PROTEIN_peaks.bb"
           },
           {
             "type": "wig",
@@ -168,7 +168,7 @@
             "height": 100,
             "minHeight": 100,
             "maxHeight": 100,
-            "url": "http://localhost:8081/images/IGVBrowser/PROTEIN_reverseStrand.bw",
+            "url": "http://{{cookiecutter.api_url}}:{{cookiecutter.api_port}}/images/IGVBrowser/PROTEIN_reverseStrand.bw",
             "color": "rgb(150, 0, 0)"
           }
         ]
@@ -228,28 +228,28 @@
       "title": "Coding Features",
       "data": {
         "ChExMix": {
-          "heatmap1": "http://localhost:8081/images/CODING/12141_AllFeatures_Heatmap.png",
-          "heatmap2": "http://localhost:8081/images/CODING/12141_AllFeatures_Colorbar.png",
-          "heatmap3": "http://localhost:8081/images/CODING/12141_BoundFeatures_Heatmap.png",
-          "heatmap4": "http://localhost:8081/images/CODING/12141_BoundFeatures_Colorbar.png",
-          "heatmap5": "http://localhost:8081/images/CODING/12141_NFR_Composite.png",
-          "heatmap6": "http://localhost:8081/images/CODING/12141_NFR_Heatmap.png",
-          "heatmap7": "http://localhost:8081/images/CODING/12141_TSS_Composite.png",
-          "heatmap8": "http://localhost:8081/images/CODING/12141_TSS_Heatmap.png",
-          "heatmap9": "http://localhost:8081/images/CODING/12141_TES_Composite.png",
-          "heatmap10": "http://localhost:8081/images/CODING/12141_TES_Heatmap.png"
+          "heatmap1": "http://{{cookiecutter.api_url}}:{{cookiecutter.api_port}}/images/CODING/12141_AllFeatures_Heatmap.png",
+          "heatmap2": "http://{{cookiecutter.api_url}}:{{cookiecutter.api_port}}/images/CODING/12141_AllFeatures_Colorbar.png",
+          "heatmap3": "http://{{cookiecutter.api_url}}:{{cookiecutter.api_port}}/images/CODING/12141_BoundFeatures_Heatmap.png",
+          "heatmap4": "http://{{cookiecutter.api_url}}:{{cookiecutter.api_port}}/images/CODING/12141_BoundFeatures_Colorbar.png",
+          "heatmap5": "http://{{cookiecutter.api_url}}:{{cookiecutter.api_port}}/images/CODING/12141_NFR_Composite.png",
+          "heatmap6": "http://{{cookiecutter.api_url}}:{{cookiecutter.api_port}}/images/CODING/12141_NFR_Heatmap.png",
+          "heatmap7": "http://{{cookiecutter.api_url}}:{{cookiecutter.api_port}}/images/CODING/12141_TSS_Composite.png",
+          "heatmap8": "http://{{cookiecutter.api_url}}:{{cookiecutter.api_port}}/images/CODING/12141_TSS_Heatmap.png",
+          "heatmap9": "http://{{cookiecutter.api_url}}:{{cookiecutter.api_port}}/images/CODING/12141_TES_Composite.png",
+          "heatmap10": "http://{{cookiecutter.api_url}}:{{cookiecutter.api_port}}/images/CODING/12141_TES_Heatmap.png"
         },
         "Subsector": {
-          "heatmap1": "http://localhost:8081/images/CODING/12141_AllFeatures_Heatmap.png",
-          "heatmap2": "http://localhost:8081/images/CODING/12141_AllFeatures_Colorbar.png",
-          "heatmap3": "http://localhost:8081/images/CODING/12141_EnrichedFeatures_Heatmap.png",
-          "heatmap4": "http://localhost:8081/images/CODING/12141_EnrichedFeatures_Colorbar.png",
-          "heatmap5": "http://localhost:8081/images/CODING/12141_EnrichedNFR_Composite.png",
-          "heatmap6": "http://localhost:8081/images/CODING/12141_EnrichedNFR_Heatmap.png",
-          "heatmap7": "http://localhost:8081/images/CODING/12141_EnrichedTSS_Composite.png",
-          "heatmap8": "http://localhost:8081/images/CODING/12141_EnrichedTSS_Heatmap.png",
-          "heatmap9": "http://localhost:8081/images/CODING/12141_EnrichedTES_Composite.png",
-          "heatmap10": "http://localhost:8081/images/CODING/12141_EnrichedTES_Heatmap.png"
+          "heatmap1": "http://{{cookiecutter.api_url}}:{{cookiecutter.api_port}}/images/CODING/12141_AllFeatures_Heatmap.png",
+          "heatmap2": "http://{{cookiecutter.api_url}}:{{cookiecutter.api_port}}/images/CODING/12141_AllFeatures_Colorbar.png",
+          "heatmap3": "http://{{cookiecutter.api_url}}:{{cookiecutter.api_port}}/images/CODING/12141_EnrichedFeatures_Heatmap.png",
+          "heatmap4": "http://{{cookiecutter.api_url}}:{{cookiecutter.api_port}}/images/CODING/12141_EnrichedFeatures_Colorbar.png",
+          "heatmap5": "http://{{cookiecutter.api_url}}:{{cookiecutter.api_port}}/images/CODING/12141_EnrichedNFR_Composite.png",
+          "heatmap6": "http://{{cookiecutter.api_url}}:{{cookiecutter.api_port}}/images/CODING/12141_EnrichedNFR_Heatmap.png",
+          "heatmap7": "http://{{cookiecutter.api_url}}:{{cookiecutter.api_port}}/images/CODING/12141_EnrichedTSS_Composite.png",
+          "heatmap8": "http://{{cookiecutter.api_url}}:{{cookiecutter.api_port}}/images/CODING/12141_EnrichedTSS_Heatmap.png",
+          "heatmap9": "http://{{cookiecutter.api_url}}:{{cookiecutter.api_port}}/images/CODING/12141_EnrichedTES_Composite.png",
+          "heatmap10": "http://{{cookiecutter.api_url}}:{{cookiecutter.api_port}}/images/CODING/12141_EnrichedTES_Heatmap.png"
         }
       }
     },
@@ -258,16 +258,16 @@
       "title": "Non-coding Features",
       "data": {
         "ChExMix": {
-          "heatmap1": "http://localhost:8081/images/NONCODING/12141_CUT_Heatmap.png",
-          "heatmap2": "http://localhost:8081/images/NONCODING/12141_SUT_Heatmap.png",
-          "heatmap3": "http://localhost:8081/images/NONCODING/12141_XUT_Heatmap.png",
-          "heatmap4": "http://localhost:8081/images/NONCODING/12141_SRNA_Heatmap.png"
+          "heatmap1": "http://{{cookiecutter.api_url}}:{{cookiecutter.api_port}}/images/NONCODING/12141_CUT_Heatmap.png",
+          "heatmap2": "http://{{cookiecutter.api_url}}:{{cookiecutter.api_port}}/images/NONCODING/12141_SUT_Heatmap.png",
+          "heatmap3": "http://{{cookiecutter.api_url}}:{{cookiecutter.api_port}}/images/NONCODING/12141_XUT_Heatmap.png",
+          "heatmap4": "http://{{cookiecutter.api_url}}:{{cookiecutter.api_port}}/images/NONCODING/12141_SRNA_Heatmap.png"
         },
         "Subsector": {
-          "heatmap1": "http://localhost:8081/images/NONCODING/12141_EnrichedCUT_Heatmap.png",
-          "heatmap2": "http://localhost:8081/images/NONCODING/12141_EnrichedSUT_Heatmap.png",
-          "heatmap3": "http://localhost:8081/images/NONCODING/12141_EnrichedXUT_Heatmap.png",
-          "heatmap4": "http://localhost:8081/images/NONCODING/12141_EnrichedSRNA_Heatmap.png"
+          "heatmap1": "http://{{cookiecutter.api_url}}:{{cookiecutter.api_port}}/images/NONCODING/12141_EnrichedCUT_Heatmap.png",
+          "heatmap2": "http://{{cookiecutter.api_url}}:{{cookiecutter.api_port}}/images/NONCODING/12141_EnrichedSUT_Heatmap.png",
+          "heatmap3": "http://{{cookiecutter.api_url}}:{{cookiecutter.api_port}}/images/NONCODING/12141_EnrichedXUT_Heatmap.png",
+          "heatmap4": "http://{{cookiecutter.api_url}}:{{cookiecutter.api_port}}/images/NONCODING/12141_EnrichedSRNA_Heatmap.png"
         }
       }
     },
@@ -275,11 +275,11 @@
       "layout": "horizontalImage",
       "title": "Other Features",
       "data": {
-        "heatmap1": "http://localhost:8081/images/OTHER/12141_TRNA_Heatmap.png",
-        "heatmap2": "http://localhost:8081/images/OTHER/12141_LTR_Heatmap.png",
-        "heatmap3": "http://localhost:8081/images/OTHER/12141_ARS_Heatmap.png",
-        "heatmap4": "http://localhost:8081/images/OTHER/12141_CENTROMERE_Heatmap.png",
-        "heatmap5": "http://localhost:8081/images/OTHER/12141_X-ELEMENT_Heatmap.png"
+        "heatmap1": "http://{{cookiecutter.api_url}}:{{cookiecutter.api_port}}/images/OTHER/12141_TRNA_Heatmap.png",
+        "heatmap2": "http://{{cookiecutter.api_url}}:{{cookiecutter.api_port}}/images/OTHER/12141_LTR_Heatmap.png",
+        "heatmap3": "http://{{cookiecutter.api_url}}:{{cookiecutter.api_port}}/images/OTHER/12141_ARS_Heatmap.png",
+        "heatmap4": "http://{{cookiecutter.api_url}}:{{cookiecutter.api_port}}/images/OTHER/12141_CENTROMERE_Heatmap.png",
+        "heatmap5": "http://{{cookiecutter.api_url}}:{{cookiecutter.api_port}}/images/OTHER/12141_X-ELEMENT_Heatmap.png"
       }
     },
     "motifImages": {
@@ -287,25 +287,25 @@
       "title": "Motif Analysis",
       "data": {
         "Motif 1": {
-          "motifLogo": "http://localhost:8081/images/MOTIF/12141_logo1.png",
-          "motifLogoReverse": "http://localhost:8081/images/MOTIF/12141_logo_rc1.png",
-          "motifFourColor": "http://localhost:8081/images/MOTIF/12141_Motif_1_fourcolor.png",
-          "motifComposite": "http://localhost:8081/images/MOTIF/12141_Motif_1_composite.png",
-          "motifHeatmap": "http://localhost:8081/images/MOTIF/12141_Motif_1_Heatmap.png"
+          "motifLogo": "http://{{cookiecutter.api_url}}:{{cookiecutter.api_port}}/images/MOTIF/12141_logo1.png",
+          "motifLogoReverse": "http://{{cookiecutter.api_url}}:{{cookiecutter.api_port}}/images/MOTIF/12141_logo_rc1.png",
+          "motifFourColor": "http://{{cookiecutter.api_url}}:{{cookiecutter.api_port}}/images/MOTIF/12141_Motif_1_fourcolor.png",
+          "motifComposite": "http://{{cookiecutter.api_url}}:{{cookiecutter.api_port}}/images/MOTIF/12141_Motif_1_composite.png",
+          "motifHeatmap": "http://{{cookiecutter.api_url}}:{{cookiecutter.api_port}}/images/MOTIF/12141_Motif_1_Heatmap.png"
         },
         "Motif 2": {
-          "motifLogo": "http://localhost:8081/images/MOTIF/12141_logo2.png",
-          "motifLogoReverse": "http://localhost:8081/images/MOTIF/12141_logo_rc2.png",
-          "motifFourColor": "http://localhost:8081/images/MOTIF/12141_Motif_2_fourcolor.png",
-          "motifComposite": "http://localhost:8081/images/MOTIF/12141_Motif_2_composite.png",
-          "motifHeatmap": "http://localhost:8081/images/MOTIF/12141_Motif_2_Heatmap.png"
+          "motifLogo": "http://{{cookiecutter.api_url}}:{{cookiecutter.api_port}}/images/MOTIF/12141_logo2.png",
+          "motifLogoReverse": "http://{{cookiecutter.api_url}}:{{cookiecutter.api_port}}/images/MOTIF/12141_logo_rc2.png",
+          "motifFourColor": "http://{{cookiecutter.api_url}}:{{cookiecutter.api_port}}/images/MOTIF/12141_Motif_2_fourcolor.png",
+          "motifComposite": "http://{{cookiecutter.api_url}}:{{cookiecutter.api_port}}/images/MOTIF/12141_Motif_2_composite.png",
+          "motifHeatmap": "http://{{cookiecutter.api_url}}:{{cookiecutter.api_port}}/images/MOTIF/12141_Motif_2_Heatmap.png"
         },
         "Motif 3": {
-          "motifLogo": "http://localhost:8081/images/MOTIF/12141_logo3.png",
-          "motifLogoReverse": "http://localhost:8081/images/MOTIF/12141_logo_rc3.png",
-          "motifFourColor": "http://localhost:8081/images/MOTIF/12141_Motif_3_fourcolor.png",
-          "motifComposite": "http://localhost:8081/images/MOTIF/12141_Motif_3_composite.png",
-          "motifHeatmap": "http://localhost:8081/images/MOTIF/12141_Motif_3_Heatmap.png"
+          "motifLogo": "http://{{cookiecutter.api_url}}:{{cookiecutter.api_port}}/images/MOTIF/12141_logo3.png",
+          "motifLogoReverse": "http://{{cookiecutter.api_url}}:{{cookiecutter.api_port}}/images/MOTIF/12141_logo_rc3.png",
+          "motifFourColor": "http://{{cookiecutter.api_url}}:{{cookiecutter.api_port}}/images/MOTIF/12141_Motif_3_fourcolor.png",
+          "motifComposite": "http://{{cookiecutter.api_url}}:{{cookiecutter.api_port}}/images/MOTIF/12141_Motif_3_composite.png",
+          "motifHeatmap": "http://{{cookiecutter.api_url}}:{{cookiecutter.api_port}}/images/MOTIF/12141_Motif_3_Heatmap.png"
         }
       }
     },
@@ -323,7 +323,7 @@
             "height": 100,
             "minHeight": 100,
             "maxHeight": 100,
-            "url": "http://localhost:8081/images/IGVBrowser/PROTEIN_forwardStrand.bw",
+            "url": "http://{{cookiecutter.api_url}}:{{cookiecutter.api_port}}/images/IGVBrowser/PROTEIN_forwardStrand.bw",
             "color": "rgb(0, 0, 150)"
           },
           {
@@ -334,7 +334,7 @@
             "height": 40,
             "minHeight": 40,
             "maxHeight": 40,
-            "url": "http://localhost:8081/images/IGVBrowser/PROTEIN_peaks.bb"
+            "url": "http://{{cookiecutter.api_url}}:{{cookiecutter.api_port}}/images/IGVBrowser/PROTEIN_peaks.bb"
           },
           {
             "type": "wig",
@@ -343,7 +343,7 @@
             "height": 100,
             "minHeight": 100,
             "maxHeight": 100,
-            "url": "http://localhost:8081/images/IGVBrowser/PROTEIN_reverseStrand.bw",
+            "url": "http://{{cookiecutter.api_url}}:{{cookiecutter.api_port}}/images/IGVBrowser/PROTEIN_reverseStrand.bw",
             "color": "rgb(150, 0, 0)"
           }
         ]
@@ -408,12 +408,12 @@
       "title": "Motif Subtypes",
       "data": {
         "Subtype0": {
-          "subtypePlot1": "http://localhost:8081/images/SUBTYPE/23146_ATF3-_sc-81189_K562_Subtype0.png",
-          "subtypePlot2": "http://localhost:8081/images/SUBTYPE/RC_23146_ATF3-_sc-81189_K562_Subtype0.png",
-          "subtypePlot3": "http://localhost:8081/images/SUBTYPE/TOMTOM_Fail.png",
-          "subtypePlot4": "http://localhost:8081/images/SUBTYPE/23146_ATF3-_sc-81189_K562_Subtype0_FourColor.png",
-          "subtypePlot5": "http://localhost:8081/images/SUBTYPE/23146_ATF3-_sc-81189_K562_Subtype0_500bp_SAMPLE.png",
-          "subtypePlot6": "http://localhost:8081/images/SUBTYPE/23146_ATF3-_sc-81189_K562_Subtype0_500bp_CONTROL.png",
+          "subtypePlot1": "http://{{cookiecutter.api_url}}:{{cookiecutter.api_port}}/images/SUBTYPE/23146_ATF3-_sc-81189_K562_Subtype0.png",
+          "subtypePlot2": "http://{{cookiecutter.api_url}}:{{cookiecutter.api_port}}/images/SUBTYPE/RC_23146_ATF3-_sc-81189_K562_Subtype0.png",
+          "subtypePlot3": "http://{{cookiecutter.api_url}}:{{cookiecutter.api_port}}/images/SUBTYPE/TOMTOM_Fail.png",
+          "subtypePlot4": "http://{{cookiecutter.api_url}}:{{cookiecutter.api_port}}/images/SUBTYPE/23146_ATF3-_sc-81189_K562_Subtype0_FourColor.png",
+          "subtypePlot5": "http://{{cookiecutter.api_url}}:{{cookiecutter.api_port}}/images/SUBTYPE/23146_ATF3-_sc-81189_K562_Subtype0_500bp_SAMPLE.png",
+          "subtypePlot6": "http://{{cookiecutter.api_url}}:{{cookiecutter.api_port}}/images/SUBTYPE/23146_ATF3-_sc-81189_K562_Subtype0_500bp_CONTROL.png",
           "subtypeComposite": {
             "Xaxis": "-249.0,-248.0,-247.0,-246.0,-245.0,-244.0,-243.0,-242.0,-241.0,-240.0,-239.0,-238.0,-237.0,-236.0,-235.0,-234.0,-233.0,-232.0,-231.0,-230.0,-229.0,-228.0,-227.0,-226.0,-225.0,-224.0,-223.0,-222.0,-221.0,-220.0,-219.0,-218.0,-217.0,-216.0,-215.0,-214.0,-213.0,-212.0,-211.0,-210.0,-209.0,-208.0,-207.0,-206.0,-205.0,-204.0,-203.0,-202.0,-201.0,-200.0,-199.0,-198.0,-197.0,-196.0,-195.0,-194.0,-193.0,-192.0,-191.0,-190.0,-189.0,-188.0,-187.0,-186.0,-185.0,-184.0,-183.0,-182.0,-181.0,-180.0,-179.0,-178.0,-177.0,-176.0,-175.0,-174.0,-173.0,-172.0,-171.0,-170.0,-169.0,-168.0,-167.0,-166.0,-165.0,-164.0,-163.0,-162.0,-161.0,-160.0,-159.0,-158.0,-157.0,-156.0,-155.0,-154.0,-153.0,-152.0,-151.0,-150.0,-149.0,-148.0,-147.0,-146.0,-145.0,-144.0,-143.0,-142.0,-141.0,-140.0,-139.0,-138.0,-137.0,-136.0,-135.0,-134.0,-133.0,-132.0,-131.0,-130.0,-129.0,-128.0,-127.0,-126.0,-125.0,-124.0,-123.0,-122.0,-121.0,-120.0,-119.0,-118.0,-117.0,-116.0,-115.0,-114.0,-113.0,-112.0,-111.0,-110.0,-109.0,-108.0,-107.0,-106.0,-105.0,-104.0,-103.0,-102.0,-101.0,-100.0,-99.0,-98.0,-97.0,-96.0,-95.0,-94.0,-93.0,-92.0,-91.0,-90.0,-89.0,-88.0,-87.0,-86.0,-85.0,-84.0,-83.0,-82.0,-81.0,-80.0,-79.0,-78.0,-77.0,-76.0,-75.0,-74.0,-73.0,-72.0,-71.0,-70.0,-69.0,-68.0,-67.0,-66.0,-65.0,-64.0,-63.0,-62.0,-61.0,-60.0,-59.0,-58.0,-57.0,-56.0,-55.0,-54.0,-53.0,-52.0,-51.0,-50.0,-49.0,-48.0,-47.0,-46.0,-45.0,-44.0,-43.0,-42.0,-41.0,-40.0,-39.0,-38.0,-37.0,-36.0,-35.0,-34.0,-33.0,-32.0,-31.0,-30.0,-29.0,-28.0,-27.0,-26.0,-25.0,-24.0,-23.0,-22.0,-21.0,-20.0,-19.0,-18.0,-17.0,-16.0,-15.0,-14.0,-13.0,-12.0,-11.0,-10.0,-9.0,-8.0,-7.0,-6.0,-5.0,-4.0,-3.0,-2.0,-1.0,0.0,1.0,2.0,3.0,4.0,5.0,6.0,7.0,8.0,9.0,10.0,11.0,12.0,13.0,14.0,15.0,16.0,17.0,18.0,19.0,20.0,21.0,22.0,23.0,24.0,25.0,26.0,27.0,28.0,29.0,30.0,31.0,32.0,33.0,34.0,35.0,36.0,37.0,38.0,39.0,40.0,41.0,42.0,43.0,44.0,45.0,46.0,47.0,48.0,49.0,50.0,51.0,52.0,53.0,54.0,55.0,56.0,57.0,58.0,59.0,60.0,61.0,62.0,63.0,64.0,65.0,66.0,67.0,68.0,69.0,70.0,71.0,72.0,73.0,74.0,75.0,76.0,77.0,78.0,79.0,80.0,81.0,82.0,83.0,84.0,85.0,86.0,87.0,88.0,89.0,90.0,91.0,92.0,93.0,94.0,95.0,96.0,97.0,98.0,99.0,100.0,101.0,102.0,103.0,104.0,105.0,106.0,107.0,108.0,109.0,110.0,111.0,112.0,113.0,114.0,115.0,116.0,117.0,118.0,119.0,120.0,121.0,122.0,123.0,124.0,125.0,126.0,127.0,128.0,129.0,130.0,131.0,132.0,133.0,134.0,135.0,136.0,137.0,138.0,139.0,140.0,141.0,142.0,143.0,144.0,145.0,146.0,147.0,148.0,149.0,150.0,151.0,152.0,153.0,154.0,155.0,156.0,157.0,158.0,159.0,160.0,161.0,162.0,163.0,164.0,165.0,166.0,167.0,168.0,169.0,170.0,171.0,172.0,173.0,174.0,175.0,176.0,177.0,178.0,179.0,180.0,181.0,182.0,183.0,184.0,185.0,186.0,187.0,188.0,189.0,190.0,191.0,192.0,193.0,194.0,195.0,196.0,197.0,198.0,199.0,200.0,201.0,202.0,203.0,204.0,205.0,206.0,207.0,208.0,209.0,210.0,211.0,212.0,213.0,214.0,215.0,216.0,217.0,218.0,219.0,220.0,221.0,222.0,223.0,224.0,225.0,226.0,227.0,228.0,229.0,230.0,231.0,232.0,233.0,234.0,235.0,236.0,237.0,238.0,239.0,240.0,241.0,242.0,243.0,244.0,245.0,246.0,247.0,248.0,249.0,250.0",
             "sampleSenseYaxis": "4.71,4.04,4.04,3.36,2.02,0.67,2.69,3.36,3.36,2.69,3.36,3.36,2.69,5.38,6.73,6.05,4.71,5.38,3.36,4.04,6.05,6.05,5.38,6.73,4.71,3.36,4.04,5.38,3.36,4.71,4.04,2.69,1.35,2.69,2.02,2.69,2.69,2.69,3.36,2.69,2.02,2.69,2.69,4.04,4.04,5.38,6.73,8.07,6.73,7.40,7.40,7.40,8.07,6.05,5.38,6.05,5.38,3.36,4.71,6.73,6.05,6.05,6.73,6.05,7.40,9.42,8.74,8.74,10.76,8.74,6.73,8.07,9.42,8.74,8.07,9.42,8.07,7.40,6.05,7.40,7.40,7.40,6.73,7.40,6.05,3.36,2.69,4.71,5.38,6.73,7.40,8.74,7.40,8.07,6.73,7.40,7.40,7.40,6.73,9.42,9.42,8.74,10.76,12.11,12.11,12.78,12.78,13.45,11.43,9.42,8.07,7.40,4.04,4.71,4.04,4.04,6.73,8.07,10.76,12.78,13.45,12.78,12.78,9.42,8.07,7.40,7.40,8.74,8.07,7.40,7.40,8.07,7.40,10.76,14.12,16.81,16.81,18.16,16.14,15.47,14.12,15.47,12.78,12.78,11.43,14.12,13.45,14.80,13.45,13.45,11.43,10.09,9.42,9.42,10.09,11.43,12.11,12.78,14.80,14.80,13.45,14.80,14.80,16.14,16.14,18.16,20.18,21.52,20.85,19.50,21.52,19.50,21.52,20.18,24.21,20.18,24.89,21.52,26.23,24.89,26.90,21.52,22.87,26.23,29.59,31.61,33.63,33.63,28.92,34.30,32.28,36.32,39.68,39.68,34.97,36.99,40.35,40.35,36.99,30.94,37.66,31.61,34.97,43.72,51.79,44.39,41.03,34.30,30.94,26.23,28.25,30.94,35.65,36.32,37.66,38.34,38.34,35.65,36.99,42.37,49.77,57.17,57.84,60.53,59.86,59.86,59.86,63.90,65.91,69.28,68.60,82.73,98.20,104.25,106.94,107.61,103.58,100.21,96.85,100.21,105.60,103.58,88.11,85.42,78.69,66.59,50.44,47.75,43.05,38.34,44.39,45.06,57.84,53.13,47.08,39.68,49.10,38.34,39.68,41.03,41.70,32.28,31.61,32.28,37.66,39.68,39.68,37.66,36.32,34.30,25.56,24.21,24.21,22.20,14.80,16.14,14.80,12.78,12.11,14.80,13.45,10.76,12.78,12.11,12.78,15.47,15.47,14.12,14.12,13.45,14.12,14.80,13.45,12.78,10.76,8.74,9.42,10.76,10.76,10.09,6.73,6.05,4.71,4.04,4.04,6.05,6.73,8.74,10.09,9.42,8.07,6.73,6.73,5.38,6.05,6.73,7.40,6.05,6.73,6.73,5.38,4.71,2.69,2.02,2.69,2.69,2.02,2.02,2.02,3.36,4.04,4.71,4.71,4.71,2.02,2.02,1.35,1.35,0.67,0.67,0.67,2.02,4.71,5.38,5.38,4.71,4.71,4.04,4.04,5.38,5.38,5.38,3.36,2.69,2.02,2.69,1.35,2.02,2.69,2.02,2.02,2.02,1.35,1.35,2.69,2.02,2.02,3.36,2.69,1.35,1.35,2.02,1.35,2.69,2.69,2.69,2.69,2.02,0.67,2.02,2.02,2.02,3.36,4.04,2.69,2.69,2.02,0.67,0.00,0.00,0.00,0.00,1.35,1.35,1.35,1.35,2.02,0.67,0.67,0.67,0.67,2.02,2.69,3.36,4.04,4.71,3.36,4.04,4.04,4.04,4.04,4.04,3.36,3.36,3.36,2.69,2.69,4.04,4.04,4.04,4.04,3.36,1.35,0.67,0.67,0.67,0.67,1.35,2.02,1.35,1.35,1.35,0.67,0.67,0.67,0.67,2.02,2.69,2.69,3.36,3.36,2.69,2.02,1.35,0.67,0.67,0.00,0.00,0.00,0.00,0.00,0.00,0.67,0.67,0.67,1.35,2.02,1.35,1.35,2.02,1.35,0.67,1.35,1.35,0.67,0.67,0.67,0.67,0.67,0.67,0.67,1.35,0.67,0.67,0.67,0.67,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.67,1.35,1.35,1.35,1.35,0.67,0.00,0.67,0.67,0.67,0.67,1.35,0.67,0.67",
@@ -431,12 +431,12 @@
           }
         },
         "Subtype1": {
-          "subtypePlot1": "http://localhost:8081/images/SUBTYPE/NoMotifDetected.png",
-          "subtypePlot2": "http://localhost:8081/images/SUBTYPE/NoMotifDetected.png",
-          "subtypePlot3": "http://localhost:8081/images/SUBTYPE/TOMTOM_Fail.png",
-          "subtypePlot4": "http://localhost:8081/images/SUBTYPE/23146_ATF3-_sc-81189_K562_Subtype1_FourColor.png",
-          "subtypePlot5": "http://localhost:8081/images/SUBTYPE/23146_ATF3-_sc-81189_K562_Subtype1_500bp_SAMPLE.png",
-          "subtypePlot6": "http://localhost:8081/images/SUBTYPE/23146_ATF3-_sc-81189_K562_Subtype1_500bp_CONTROL.png",
+          "subtypePlot1": "http://{{cookiecutter.api_url}}:{{cookiecutter.api_port}}/images/SUBTYPE/NoMotifDetected.png",
+          "subtypePlot2": "http://{{cookiecutter.api_url}}:{{cookiecutter.api_port}}/images/SUBTYPE/NoMotifDetected.png",
+          "subtypePlot3": "http://{{cookiecutter.api_url}}:{{cookiecutter.api_port}}/images/SUBTYPE/TOMTOM_Fail.png",
+          "subtypePlot4": "http://{{cookiecutter.api_url}}:{{cookiecutter.api_port}}/images/SUBTYPE/23146_ATF3-_sc-81189_K562_Subtype1_FourColor.png",
+          "subtypePlot5": "http://{{cookiecutter.api_url}}:{{cookiecutter.api_port}}/images/SUBTYPE/23146_ATF3-_sc-81189_K562_Subtype1_500bp_SAMPLE.png",
+          "subtypePlot6": "http://{{cookiecutter.api_url}}:{{cookiecutter.api_port}}/images/SUBTYPE/23146_ATF3-_sc-81189_K562_Subtype1_500bp_CONTROL.png",
           "subtypeComposite": {
             "Xaxis": "-249.0,-248.0,-247.0,-246.0,-245.0,-244.0,-243.0,-242.0,-241.0,-240.0,-239.0,-238.0,-237.0,-236.0,-235.0,-234.0,-233.0,-232.0,-231.0,-230.0,-229.0,-228.0,-227.0,-226.0,-225.0,-224.0,-223.0,-222.0,-221.0,-220.0,-219.0,-218.0,-217.0,-216.0,-215.0,-214.0,-213.0,-212.0,-211.0,-210.0,-209.0,-208.0,-207.0,-206.0,-205.0,-204.0,-203.0,-202.0,-201.0,-200.0,-199.0,-198.0,-197.0,-196.0,-195.0,-194.0,-193.0,-192.0,-191.0,-190.0,-189.0,-188.0,-187.0,-186.0,-185.0,-184.0,-183.0,-182.0,-181.0,-180.0,-179.0,-178.0,-177.0,-176.0,-175.0,-174.0,-173.0,-172.0,-171.0,-170.0,-169.0,-168.0,-167.0,-166.0,-165.0,-164.0,-163.0,-162.0,-161.0,-160.0,-159.0,-158.0,-157.0,-156.0,-155.0,-154.0,-153.0,-152.0,-151.0,-150.0,-149.0,-148.0,-147.0,-146.0,-145.0,-144.0,-143.0,-142.0,-141.0,-140.0,-139.0,-138.0,-137.0,-136.0,-135.0,-134.0,-133.0,-132.0,-131.0,-130.0,-129.0,-128.0,-127.0,-126.0,-125.0,-124.0,-123.0,-122.0,-121.0,-120.0,-119.0,-118.0,-117.0,-116.0,-115.0,-114.0,-113.0,-112.0,-111.0,-110.0,-109.0,-108.0,-107.0,-106.0,-105.0,-104.0,-103.0,-102.0,-101.0,-100.0,-99.0,-98.0,-97.0,-96.0,-95.0,-94.0,-93.0,-92.0,-91.0,-90.0,-89.0,-88.0,-87.0,-86.0,-85.0,-84.0,-83.0,-82.0,-81.0,-80.0,-79.0,-78.0,-77.0,-76.0,-75.0,-74.0,-73.0,-72.0,-71.0,-70.0,-69.0,-68.0,-67.0,-66.0,-65.0,-64.0,-63.0,-62.0,-61.0,-60.0,-59.0,-58.0,-57.0,-56.0,-55.0,-54.0,-53.0,-52.0,-51.0,-50.0,-49.0,-48.0,-47.0,-46.0,-45.0,-44.0,-43.0,-42.0,-41.0,-40.0,-39.0,-38.0,-37.0,-36.0,-35.0,-34.0,-33.0,-32.0,-31.0,-30.0,-29.0,-28.0,-27.0,-26.0,-25.0,-24.0,-23.0,-22.0,-21.0,-20.0,-19.0,-18.0,-17.0,-16.0,-15.0,-14.0,-13.0,-12.0,-11.0,-10.0,-9.0,-8.0,-7.0,-6.0,-5.0,-4.0,-3.0,-2.0,-1.0,0.0,1.0,2.0,3.0,4.0,5.0,6.0,7.0,8.0,9.0,10.0,11.0,12.0,13.0,14.0,15.0,16.0,17.0,18.0,19.0,20.0,21.0,22.0,23.0,24.0,25.0,26.0,27.0,28.0,29.0,30.0,31.0,32.0,33.0,34.0,35.0,36.0,37.0,38.0,39.0,40.0,41.0,42.0,43.0,44.0,45.0,46.0,47.0,48.0,49.0,50.0,51.0,52.0,53.0,54.0,55.0,56.0,57.0,58.0,59.0,60.0,61.0,62.0,63.0,64.0,65.0,66.0,67.0,68.0,69.0,70.0,71.0,72.0,73.0,74.0,75.0,76.0,77.0,78.0,79.0,80.0,81.0,82.0,83.0,84.0,85.0,86.0,87.0,88.0,89.0,90.0,91.0,92.0,93.0,94.0,95.0,96.0,97.0,98.0,99.0,100.0,101.0,102.0,103.0,104.0,105.0,106.0,107.0,108.0,109.0,110.0,111.0,112.0,113.0,114.0,115.0,116.0,117.0,118.0,119.0,120.0,121.0,122.0,123.0,124.0,125.0,126.0,127.0,128.0,129.0,130.0,131.0,132.0,133.0,134.0,135.0,136.0,137.0,138.0,139.0,140.0,141.0,142.0,143.0,144.0,145.0,146.0,147.0,148.0,149.0,150.0,151.0,152.0,153.0,154.0,155.0,156.0,157.0,158.0,159.0,160.0,161.0,162.0,163.0,164.0,165.0,166.0,167.0,168.0,169.0,170.0,171.0,172.0,173.0,174.0,175.0,176.0,177.0,178.0,179.0,180.0,181.0,182.0,183.0,184.0,185.0,186.0,187.0,188.0,189.0,190.0,191.0,192.0,193.0,194.0,195.0,196.0,197.0,198.0,199.0,200.0,201.0,202.0,203.0,204.0,205.0,206.0,207.0,208.0,209.0,210.0,211.0,212.0,213.0,214.0,215.0,216.0,217.0,218.0,219.0,220.0,221.0,222.0,223.0,224.0,225.0,226.0,227.0,228.0,229.0,230.0,231.0,232.0,233.0,234.0,235.0,236.0,237.0,238.0,239.0,240.0,241.0,242.0,243.0,244.0,245.0,246.0,247.0,248.0,249.0,250.0",
             "sampleSenseYaxis": "0.00,0.00,0.00,0.00,19.95,19.95,19.95,19.95,19.95,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,39.91,39.91,39.91,39.91,39.91,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,19.95,19.95,19.95,19.95,19.95,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,19.95,19.95,19.95,19.95,19.95,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,19.95,19.95,19.95,19.95,19.95,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,19.95,59.86,59.86,59.86,59.86,79.81,59.86,59.86,59.86,59.86,19.95,19.95,19.95,19.95,19.95,19.95,0.00,0.00,0.00,0.00,19.95,19.95,39.91,39.91,39.91,19.95,19.95,0.00,0.00,0.00,0.00,19.95,39.91,39.91,39.91,39.91,19.95,0.00,0.00,0.00,0.00,0.00,0.00,39.91,59.86,79.81,79.81,79.81,39.91,19.95,39.91,39.91,59.86,59.86,59.86,19.95,59.86,39.91,39.91,39.91,39.91,19.95,19.95,19.95,19.95,19.95,39.91,39.91,159.63,159.63,159.63,139.67,139.67,39.91,39.91,39.91,19.95,59.86,79.81,99.77,99.77,119.72,79.81,39.91,19.95,19.95,0.00,19.95,39.91,59.86,59.86,79.81,59.86,39.91,39.91,59.86,39.91,39.91,39.91,19.95,0.00,19.95,39.91,39.91,39.91,59.86,39.91,39.91,39.91,59.86,79.81,99.77,79.81,79.81,59.86,19.95,0.00,0.00,0.00,59.86,59.86,59.86,59.86,59.86,0.00,19.95,19.95,19.95,19.95,19.95,0.00,19.95,19.95,19.95,39.91,39.91,19.95,19.95,19.95,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,19.95,19.95,19.95,19.95,19.95,39.91,39.91,39.91,39.91,39.91,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,19.95,39.91,39.91,39.91,39.91,19.95,0.00,0.00,0.00,0.00,0.00,0.00,19.95,59.86,59.86,59.86,59.86,59.86,59.86,59.86,59.86,79.81,59.86,19.95,19.95,39.91,59.86,159.63,159.63,179.58,159.63,119.72,39.91,59.86,39.91,39.91,59.86,39.91,19.95,19.95,19.95,19.95,19.95,19.95,19.95,39.91,19.95,19.95,79.81,79.81,59.86,59.86,59.86,0.00,39.91,39.91,59.86,59.86,59.86,39.91,79.81,79.81,79.81,119.72,119.72,79.81,99.77,159.63,119.72,179.58,179.58,159.63,99.77,99.77,39.91,39.91,19.95,19.95,59.86,39.91,39.91,39.91,39.91,0.00,0.00,0.00,19.95,19.95,19.95,39.91,59.86,39.91,39.91,39.91,19.95,0.00,0.00,0.00,19.95,19.95,19.95,19.95,19.95,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,59.86,59.86,59.86,79.81,99.77,59.86,59.86,59.86,39.91,19.95,0.00,0.00,0.00,0.00,39.91,59.86,59.86,59.86,59.86,19.95,0.00,0.00,0.00,19.95,39.91,59.86,59.86,59.86,39.91,39.91,19.95,59.86,59.86,79.81,59.86,59.86,39.91,39.91,19.95,59.86,59.86,39.91,39.91,79.81,39.91,159.63,159.63,159.63,119.72,119.72,0.00,0.00,0.00,0.00,0.00,19.95,19.95,39.91,39.91,79.81,59.86,59.86,39.91,39.91,39.91,39.91,79.81,79.81,79.81,39.91,39.91,0.00,0.00,19.95,19.95,39.91,39.91,59.86,99.77,119.72,99.77,99.77,99.77",
@@ -454,12 +454,12 @@
           }
         },
         "Subtype2": {
-          "subtypePlot1": "http://localhost:8081/images/SUBTYPE/NoMotifDetected.png",
-          "subtypePlot2": "http://localhost:8081/images/SUBTYPE/NoMotifDetected.png",
-          "subtypePlot3": "http://localhost:8081/images/SUBTYPE/TOMTOM_Fail.png",
-          "subtypePlot4": "http://localhost:8081/images/SUBTYPE/23146_ATF3-_sc-81189_K562_Subtype2_FourColor.png",
-          "subtypePlot5": "http://localhost:8081/images/SUBTYPE/23146_ATF3-_sc-81189_K562_Subtype2_500bp_SAMPLE.png",
-          "subtypePlot6": "http://localhost:8081/images/SUBTYPE/23146_ATF3-_sc-81189_K562_Subtype2_500bp_CONTROL.png",
+          "subtypePlot1": "http://{{cookiecutter.api_url}}:{{cookiecutter.api_port}}/images/SUBTYPE/NoMotifDetected.png",
+          "subtypePlot2": "http://{{cookiecutter.api_url}}:{{cookiecutter.api_port}}/images/SUBTYPE/NoMotifDetected.png",
+          "subtypePlot3": "http://{{cookiecutter.api_url}}:{{cookiecutter.api_port}}/images/SUBTYPE/TOMTOM_Fail.png",
+          "subtypePlot4": "http://{{cookiecutter.api_url}}:{{cookiecutter.api_port}}/images/SUBTYPE/23146_ATF3-_sc-81189_K562_Subtype2_FourColor.png",
+          "subtypePlot5": "http://{{cookiecutter.api_url}}:{{cookiecutter.api_port}}/images/SUBTYPE/23146_ATF3-_sc-81189_K562_Subtype2_500bp_SAMPLE.png",
+          "subtypePlot6": "http://{{cookiecutter.api_url}}:{{cookiecutter.api_port}}/images/SUBTYPE/23146_ATF3-_sc-81189_K562_Subtype2_500bp_CONTROL.png",
           "subtypeComposite": {
             "Xaxis": "-249.0,-248.0,-247.0,-246.0,-245.0,-244.0,-243.0,-242.0,-241.0,-240.0,-239.0,-238.0,-237.0,-236.0,-235.0,-234.0,-233.0,-232.0,-231.0,-230.0,-229.0,-228.0,-227.0,-226.0,-225.0,-224.0,-223.0,-222.0,-221.0,-220.0,-219.0,-218.0,-217.0,-216.0,-215.0,-214.0,-213.0,-212.0,-211.0,-210.0,-209.0,-208.0,-207.0,-206.0,-205.0,-204.0,-203.0,-202.0,-201.0,-200.0,-199.0,-198.0,-197.0,-196.0,-195.0,-194.0,-193.0,-192.0,-191.0,-190.0,-189.0,-188.0,-187.0,-186.0,-185.0,-184.0,-183.0,-182.0,-181.0,-180.0,-179.0,-178.0,-177.0,-176.0,-175.0,-174.0,-173.0,-172.0,-171.0,-170.0,-169.0,-168.0,-167.0,-166.0,-165.0,-164.0,-163.0,-162.0,-161.0,-160.0,-159.0,-158.0,-157.0,-156.0,-155.0,-154.0,-153.0,-152.0,-151.0,-150.0,-149.0,-148.0,-147.0,-146.0,-145.0,-144.0,-143.0,-142.0,-141.0,-140.0,-139.0,-138.0,-137.0,-136.0,-135.0,-134.0,-133.0,-132.0,-131.0,-130.0,-129.0,-128.0,-127.0,-126.0,-125.0,-124.0,-123.0,-122.0,-121.0,-120.0,-119.0,-118.0,-117.0,-116.0,-115.0,-114.0,-113.0,-112.0,-111.0,-110.0,-109.0,-108.0,-107.0,-106.0,-105.0,-104.0,-103.0,-102.0,-101.0,-100.0,-99.0,-98.0,-97.0,-96.0,-95.0,-94.0,-93.0,-92.0,-91.0,-90.0,-89.0,-88.0,-87.0,-86.0,-85.0,-84.0,-83.0,-82.0,-81.0,-80.0,-79.0,-78.0,-77.0,-76.0,-75.0,-74.0,-73.0,-72.0,-71.0,-70.0,-69.0,-68.0,-67.0,-66.0,-65.0,-64.0,-63.0,-62.0,-61.0,-60.0,-59.0,-58.0,-57.0,-56.0,-55.0,-54.0,-53.0,-52.0,-51.0,-50.0,-49.0,-48.0,-47.0,-46.0,-45.0,-44.0,-43.0,-42.0,-41.0,-40.0,-39.0,-38.0,-37.0,-36.0,-35.0,-34.0,-33.0,-32.0,-31.0,-30.0,-29.0,-28.0,-27.0,-26.0,-25.0,-24.0,-23.0,-22.0,-21.0,-20.0,-19.0,-18.0,-17.0,-16.0,-15.0,-14.0,-13.0,-12.0,-11.0,-10.0,-9.0,-8.0,-7.0,-6.0,-5.0,-4.0,-3.0,-2.0,-1.0,0.0,1.0,2.0,3.0,4.0,5.0,6.0,7.0,8.0,9.0,10.0,11.0,12.0,13.0,14.0,15.0,16.0,17.0,18.0,19.0,20.0,21.0,22.0,23.0,24.0,25.0,26.0,27.0,28.0,29.0,30.0,31.0,32.0,33.0,34.0,35.0,36.0,37.0,38.0,39.0,40.0,41.0,42.0,43.0,44.0,45.0,46.0,47.0,48.0,49.0,50.0,51.0,52.0,53.0,54.0,55.0,56.0,57.0,58.0,59.0,60.0,61.0,62.0,63.0,64.0,65.0,66.0,67.0,68.0,69.0,70.0,71.0,72.0,73.0,74.0,75.0,76.0,77.0,78.0,79.0,80.0,81.0,82.0,83.0,84.0,85.0,86.0,87.0,88.0,89.0,90.0,91.0,92.0,93.0,94.0,95.0,96.0,97.0,98.0,99.0,100.0,101.0,102.0,103.0,104.0,105.0,106.0,107.0,108.0,109.0,110.0,111.0,112.0,113.0,114.0,115.0,116.0,117.0,118.0,119.0,120.0,121.0,122.0,123.0,124.0,125.0,126.0,127.0,128.0,129.0,130.0,131.0,132.0,133.0,134.0,135.0,136.0,137.0,138.0,139.0,140.0,141.0,142.0,143.0,144.0,145.0,146.0,147.0,148.0,149.0,150.0,151.0,152.0,153.0,154.0,155.0,156.0,157.0,158.0,159.0,160.0,161.0,162.0,163.0,164.0,165.0,166.0,167.0,168.0,169.0,170.0,171.0,172.0,173.0,174.0,175.0,176.0,177.0,178.0,179.0,180.0,181.0,182.0,183.0,184.0,185.0,186.0,187.0,188.0,189.0,190.0,191.0,192.0,193.0,194.0,195.0,196.0,197.0,198.0,199.0,200.0,201.0,202.0,203.0,204.0,205.0,206.0,207.0,208.0,209.0,210.0,211.0,212.0,213.0,214.0,215.0,216.0,217.0,218.0,219.0,220.0,221.0,222.0,223.0,224.0,225.0,226.0,227.0,228.0,229.0,230.0,231.0,232.0,233.0,234.0,235.0,236.0,237.0,238.0,239.0,240.0,241.0,242.0,243.0,244.0,245.0,246.0,247.0,248.0,249.0,250.0",
             "sampleSenseYaxis": "13.30,6.65,9.98,9.98,13.30,9.98,6.65,3.33,9.98,9.98,9.98,16.63,19.95,13.30,9.98,19.95,13.30,23.28,23.28,26.60,16.63,16.63,6.65,6.65,3.33,3.33,9.98,6.65,9.98,9.98,9.98,3.33,3.33,3.33,6.65,6.65,6.65,6.65,6.65,3.33,3.33,3.33,3.33,0.00,0.00,0.00,3.33,3.33,3.33,3.33,3.33,0.00,0.00,3.33,6.65,9.98,13.30,13.30,9.98,9.98,13.30,9.98,9.98,13.30,13.30,13.30,13.30,13.30,9.98,6.65,3.33,3.33,6.65,6.65,19.95,16.63,16.63,13.30,13.30,3.33,6.65,9.98,9.98,13.30,16.63,23.28,26.60,29.93,26.60,23.28,16.63,16.63,13.30,16.63,13.30,9.98,6.65,6.65,3.33,13.30,19.95,16.63,23.28,29.93,23.28,36.58,36.58,29.93,23.28,26.60,13.30,13.30,13.30,16.63,9.98,9.98,9.98,13.30,9.98,16.63,9.98,13.30,16.63,23.28,23.28,23.28,26.60,19.95,16.63,29.93,29.93,23.28,29.93,36.58,16.63,26.60,29.93,26.60,26.60,29.93,26.60,26.60,29.93,26.60,23.28,19.95,19.95,23.28,19.95,19.95,16.63,19.95,13.30,9.98,13.30,19.95,23.28,23.28,23.28,23.28,23.28,13.30,9.98,9.98,9.98,3.33,6.65,9.98,16.63,13.30,16.63,13.30,19.95,16.63,16.63,23.28,29.93,19.95,19.95,23.28,23.28,23.28,29.93,36.58,33.26,36.58,29.93,26.60,23.28,33.26,29.93,29.93,29.93,29.93,19.95,13.30,26.60,33.26,36.58,56.53,56.53,56.53,46.56,43.23,26.60,33.26,33.26,46.56,46.56,53.21,66.51,66.51,59.86,63.19,63.19,66.51,63.19,73.16,86.46,86.46,66.51,69.84,66.51,66.51,99.77,109.74,146.32,159.63,182.91,169.60,156.30,126.37,113.07,93.12,96.44,133.02,126.37,123.05,106.42,83.14,76.49,76.49,66.51,69.84,76.49,53.21,46.56,66.51,56.53,59.86,63.19,66.51,59.86,66.51,53.21,46.56,46.56,36.58,33.26,33.26,36.58,43.23,59.86,59.86,59.86,53.21,43.23,33.26,36.58,33.26,29.93,33.26,36.58,29.93,33.26,33.26,33.26,43.23,39.91,33.26,33.26,26.60,3.33,9.98,9.98,16.63,23.28,33.26,33.26,33.26,29.93,23.28,16.63,19.95,19.95,16.63,16.63,16.63,9.98,13.30,13.30,9.98,9.98,6.65,16.63,19.95,19.95,29.93,29.93,16.63,19.95,19.95,6.65,9.98,9.98,3.33,6.65,9.98,6.65,9.98,9.98,6.65,3.33,3.33,6.65,6.65,6.65,6.65,6.65,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,9.98,9.98,9.98,16.63,16.63,6.65,6.65,6.65,3.33,3.33,6.65,6.65,6.65,3.33,3.33,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,3.33,3.33,3.33,3.33,3.33,3.33,3.33,3.33,3.33,6.65,6.65,6.65,6.65,6.65,6.65,3.33,6.65,6.65,9.98,6.65,9.98,6.65,6.65,3.33,3.33,0.00,3.33,3.33,3.33,3.33,6.65,3.33,3.33,3.33,3.33,3.33,3.33,3.33,6.65,6.65,3.33,6.65,6.65,3.33,3.33,3.33,0.00,0.00,0.00,0.00,3.33,3.33,3.33,3.33,3.33,0.00,3.33,3.33,3.33,3.33,3.33,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,3.33,3.33,3.33,3.33,3.33,0.00,0.00,0.00,0.00,3.33,3.33,3.33,3.33,3.33,0.00,0.00,3.33,3.33,3.33,3.33,3.33,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,3.33,3.33,3.33,3.33,3.33,0.00,0.00,0.00,0.00,3.33,3.33,3.33,3.33,3.33,0.00,0.00,0.00,0.00,0.00",
@@ -477,12 +477,12 @@
           }
         },
         "Subtype3": {
-          "subtypePlot1": "http://localhost:8081/images/SUBTYPE/NoMotifDetected.png",
-          "subtypePlot2": "http://localhost:8081/images/SUBTYPE/NoMotifDetected.png",
-          "subtypePlot3": "http://localhost:8081/images/SUBTYPE/TOMTOM_Fail.png",
-          "subtypePlot4": "http://localhost:8081/images/SUBTYPE/23146_ATF3-_sc-81189_K562_Subtype3_FourColor.png",
-          "subtypePlot5": "http://localhost:8081/images/SUBTYPE/23146_ATF3-_sc-81189_K562_Subtype3_500bp_SAMPLE.png",
-          "subtypePlot6": "http://localhost:8081/images/SUBTYPE/23146_ATF3-_sc-81189_K562_Subtype3_500bp_CONTROL.png",
+          "subtypePlot1": "http://{{cookiecutter.api_url}}:{{cookiecutter.api_port}}/images/SUBTYPE/NoMotifDetected.png",
+          "subtypePlot2": "http://{{cookiecutter.api_url}}:{{cookiecutter.api_port}}/images/SUBTYPE/NoMotifDetected.png",
+          "subtypePlot3": "http://{{cookiecutter.api_url}}:{{cookiecutter.api_port}}/images/SUBTYPE/TOMTOM_Fail.png",
+          "subtypePlot4": "http://{{cookiecutter.api_url}}:{{cookiecutter.api_port}}/images/SUBTYPE/23146_ATF3-_sc-81189_K562_Subtype3_FourColor.png",
+          "subtypePlot5": "http://{{cookiecutter.api_url}}:{{cookiecutter.api_port}}/images/SUBTYPE/23146_ATF3-_sc-81189_K562_Subtype3_500bp_SAMPLE.png",
+          "subtypePlot6": "http://{{cookiecutter.api_url}}:{{cookiecutter.api_port}}/images/SUBTYPE/23146_ATF3-_sc-81189_K562_Subtype3_500bp_CONTROL.png",
           "subtypeComposite": {
             "Xaxis": "-249.0,-248.0,-247.0,-246.0,-245.0,-244.0,-243.0,-242.0,-241.0,-240.0,-239.0,-238.0,-237.0,-236.0,-235.0,-234.0,-233.0,-232.0,-231.0,-230.0,-229.0,-228.0,-227.0,-226.0,-225.0,-224.0,-223.0,-222.0,-221.0,-220.0,-219.0,-218.0,-217.0,-216.0,-215.0,-214.0,-213.0,-212.0,-211.0,-210.0,-209.0,-208.0,-207.0,-206.0,-205.0,-204.0,-203.0,-202.0,-201.0,-200.0,-199.0,-198.0,-197.0,-196.0,-195.0,-194.0,-193.0,-192.0,-191.0,-190.0,-189.0,-188.0,-187.0,-186.0,-185.0,-184.0,-183.0,-182.0,-181.0,-180.0,-179.0,-178.0,-177.0,-176.0,-175.0,-174.0,-173.0,-172.0,-171.0,-170.0,-169.0,-168.0,-167.0,-166.0,-165.0,-164.0,-163.0,-162.0,-161.0,-160.0,-159.0,-158.0,-157.0,-156.0,-155.0,-154.0,-153.0,-152.0,-151.0,-150.0,-149.0,-148.0,-147.0,-146.0,-145.0,-144.0,-143.0,-142.0,-141.0,-140.0,-139.0,-138.0,-137.0,-136.0,-135.0,-134.0,-133.0,-132.0,-131.0,-130.0,-129.0,-128.0,-127.0,-126.0,-125.0,-124.0,-123.0,-122.0,-121.0,-120.0,-119.0,-118.0,-117.0,-116.0,-115.0,-114.0,-113.0,-112.0,-111.0,-110.0,-109.0,-108.0,-107.0,-106.0,-105.0,-104.0,-103.0,-102.0,-101.0,-100.0,-99.0,-98.0,-97.0,-96.0,-95.0,-94.0,-93.0,-92.0,-91.0,-90.0,-89.0,-88.0,-87.0,-86.0,-85.0,-84.0,-83.0,-82.0,-81.0,-80.0,-79.0,-78.0,-77.0,-76.0,-75.0,-74.0,-73.0,-72.0,-71.0,-70.0,-69.0,-68.0,-67.0,-66.0,-65.0,-64.0,-63.0,-62.0,-61.0,-60.0,-59.0,-58.0,-57.0,-56.0,-55.0,-54.0,-53.0,-52.0,-51.0,-50.0,-49.0,-48.0,-47.0,-46.0,-45.0,-44.0,-43.0,-42.0,-41.0,-40.0,-39.0,-38.0,-37.0,-36.0,-35.0,-34.0,-33.0,-32.0,-31.0,-30.0,-29.0,-28.0,-27.0,-26.0,-25.0,-24.0,-23.0,-22.0,-21.0,-20.0,-19.0,-18.0,-17.0,-16.0,-15.0,-14.0,-13.0,-12.0,-11.0,-10.0,-9.0,-8.0,-7.0,-6.0,-5.0,-4.0,-3.0,-2.0,-1.0,0.0,1.0,2.0,3.0,4.0,5.0,6.0,7.0,8.0,9.0,10.0,11.0,12.0,13.0,14.0,15.0,16.0,17.0,18.0,19.0,20.0,21.0,22.0,23.0,24.0,25.0,26.0,27.0,28.0,29.0,30.0,31.0,32.0,33.0,34.0,35.0,36.0,37.0,38.0,39.0,40.0,41.0,42.0,43.0,44.0,45.0,46.0,47.0,48.0,49.0,50.0,51.0,52.0,53.0,54.0,55.0,56.0,57.0,58.0,59.0,60.0,61.0,62.0,63.0,64.0,65.0,66.0,67.0,68.0,69.0,70.0,71.0,72.0,73.0,74.0,75.0,76.0,77.0,78.0,79.0,80.0,81.0,82.0,83.0,84.0,85.0,86.0,87.0,88.0,89.0,90.0,91.0,92.0,93.0,94.0,95.0,96.0,97.0,98.0,99.0,100.0,101.0,102.0,103.0,104.0,105.0,106.0,107.0,108.0,109.0,110.0,111.0,112.0,113.0,114.0,115.0,116.0,117.0,118.0,119.0,120.0,121.0,122.0,123.0,124.0,125.0,126.0,127.0,128.0,129.0,130.0,131.0,132.0,133.0,134.0,135.0,136.0,137.0,138.0,139.0,140.0,141.0,142.0,143.0,144.0,145.0,146.0,147.0,148.0,149.0,150.0,151.0,152.0,153.0,154.0,155.0,156.0,157.0,158.0,159.0,160.0,161.0,162.0,163.0,164.0,165.0,166.0,167.0,168.0,169.0,170.0,171.0,172.0,173.0,174.0,175.0,176.0,177.0,178.0,179.0,180.0,181.0,182.0,183.0,184.0,185.0,186.0,187.0,188.0,189.0,190.0,191.0,192.0,193.0,194.0,195.0,196.0,197.0,198.0,199.0,200.0,201.0,202.0,203.0,204.0,205.0,206.0,207.0,208.0,209.0,210.0,211.0,212.0,213.0,214.0,215.0,216.0,217.0,218.0,219.0,220.0,221.0,222.0,223.0,224.0,225.0,226.0,227.0,228.0,229.0,230.0,231.0,232.0,233.0,234.0,235.0,236.0,237.0,238.0,239.0,240.0,241.0,242.0,243.0,244.0,245.0,246.0,247.0,248.0,249.0,250.0",
             "sampleSenseYaxis": "59.86,59.86,59.86,59.86,59.86,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,179.58,179.58,179.58,179.58,179.58,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,59.86,59.86,59.86,59.86,59.86,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,59.86,59.86,59.86,59.86,59.86,0.00,59.86,59.86,59.86,59.86,59.86,0.00,59.86,179.58,179.58,179.58,179.58,119.72,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,59.86,59.86,59.86,59.86,59.86,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,59.86,59.86,59.86,119.72,119.72,179.58,179.58,179.58,119.72,179.58,59.86,59.86,59.86,179.58,119.72,119.72,119.72,119.72,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,59.86,119.72,119.72,119.72,119.72,179.58,299.30,299.30,419.02,478.88,359.16,179.58,179.58,179.58,119.72,119.72,119.72,119.72,59.86,59.86,119.72,119.72,778.18,838.04,838.04,838.04,897.90,359.16,239.44,239.44,239.44,299.30,359.16,359.16,359.16,299.30,239.44,59.86,59.86,59.86,179.58,119.72,119.72,119.72,119.72,0.00,239.44,299.30,478.88,538.74,538.74,299.30,239.44,59.86,59.86,119.72,119.72,119.72,299.30,239.44,359.16,359.16,419.02,239.44,778.18,658.46,778.18,778.18,957.76,478.88,419.02,359.16,299.30,119.72,59.86,59.86,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,59.86,119.72,179.58,179.58,538.74,478.88,598.60,658.46,658.46,299.30,299.30,119.72,0.00,59.86,59.86,59.86,119.72,119.72,59.86,59.86,119.72,119.72,778.18,957.76,1197.20,1137.34,1137.34,478.88,299.30,59.86,59.86,0.00,59.86,59.86,59.86,59.86,59.86,0.00,59.86,119.72,179.58,179.58,179.58,119.72,59.86,0.00,59.86,59.86,119.72,119.72,119.72,59.86,59.86,0.00,0.00,59.86,59.86,59.86,59.86,59.86,59.86,59.86,59.86,59.86,59.86,0.00,0.00,0.00,0.00,119.72,119.72,119.72,179.58,179.58,59.86,59.86,59.86,59.86,59.86,59.86,59.86,59.86,0.00,0.00,59.86,179.58,179.58,239.44,299.30,239.44,119.72,179.58,179.58,119.72,119.72,179.58,119.72,59.86,59.86,119.72,59.86,119.72,119.72,179.58,239.44,239.44,299.30,299.30,239.44,119.72,718.32,718.32,1137.34,1257.06,1316.92,718.32,658.46,239.44,119.72,59.86,119.72,59.86,59.86,119.72,179.58,119.72,119.72,119.72,59.86,59.86,59.86,119.72,119.72,119.72,239.44,299.30,239.44,239.44,299.30,179.58,119.72,119.72,119.72,59.86,0.00,0.00,0.00,0.00,59.86,59.86,179.58,239.44,718.32,778.18,838.04,718.32,778.18,299.30,179.58,119.72,119.72,0.00,0.00,59.86,59.86,119.72,119.72,119.72,59.86,59.86,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,59.86,59.86,59.86,59.86,179.58,119.72,119.72,179.58,179.58,59.86,59.86,59.86,0.00,0.00,0.00,119.72,119.72,119.72,119.72,119.72,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,59.86,59.86,59.86,59.86,59.86,59.86,59.86,59.86,59.86,119.72,239.44,299.30,299.30,359.16,359.16,239.44,179.58,179.58,119.72,59.86,0.00,179.58,179.58,299.30,299.30,299.30,119.72,419.02,359.16,478.88,478.88,598.60,299.30,239.44,119.72,119.72,0.00,59.86,59.86,59.86,119.72,119.72,59.86,59.86,59.86,0.00,0.00,0.00,0.00,0.00,0.00,59.86,59.86,119.72,119.72,119.72,59.86,59.86,0.00,0.00,59.86,59.86,59.86,59.86,59.86,0.00,0.00,59.86,59.86,119.72,179.58,239.44,179.58,239.44,179.58,119.72,59.86,59.86",
@@ -506,10 +506,10 @@
       "title": "APriori Motifs",
       "data": {
         "Motif0": {
-          "aprioriPlot1": "http://localhost:8081/images/APRIORI/JASPAR_cluster_77.png",
-          "aprioriPlot2": "http://localhost:8081/images/APRIORI/23146_ATF3-_sc-81189_K562_motif_cluster_77_FourColor.png",
-          "aprioriPlot3": "http://localhost:8081/images/APRIORI/23146_ATF3-_sc-81189_K562_motif_cluster_77_500bp_SAMPLE.png",
-          "aprioriPlot4": "http://localhost:8081/images/APRIORI/23146_ATF3-_sc-81189_K562_motif_cluster_77_500bp_CONTROL.png",
+          "aprioriPlot1": "http://{{cookiecutter.api_url}}:{{cookiecutter.api_port}}/images/APRIORI/JASPAR_cluster_77.png",
+          "aprioriPlot2": "http://{{cookiecutter.api_url}}:{{cookiecutter.api_port}}/images/APRIORI/23146_ATF3-_sc-81189_K562_motif_cluster_77_FourColor.png",
+          "aprioriPlot3": "http://{{cookiecutter.api_url}}:{{cookiecutter.api_port}}/images/APRIORI/23146_ATF3-_sc-81189_K562_motif_cluster_77_500bp_SAMPLE.png",
+          "aprioriPlot4": "http://{{cookiecutter.api_url}}:{{cookiecutter.api_port}}/images/APRIORI/23146_ATF3-_sc-81189_K562_motif_cluster_77_500bp_CONTROL.png",
           "aprioriComposite": {
             "Xaxis": "-249.0,-248.0,-247.0,-246.0,-245.0,-244.0,-243.0,-242.0,-241.0,-240.0,-239.0,-238.0,-237.0,-236.0,-235.0,-234.0,-233.0,-232.0,-231.0,-230.0,-229.0,-228.0,-227.0,-226.0,-225.0,-224.0,-223.0,-222.0,-221.0,-220.0,-219.0,-218.0,-217.0,-216.0,-215.0,-214.0,-213.0,-212.0,-211.0,-210.0,-209.0,-208.0,-207.0,-206.0,-205.0,-204.0,-203.0,-202.0,-201.0,-200.0,-199.0,-198.0,-197.0,-196.0,-195.0,-194.0,-193.0,-192.0,-191.0,-190.0,-189.0,-188.0,-187.0,-186.0,-185.0,-184.0,-183.0,-182.0,-181.0,-180.0,-179.0,-178.0,-177.0,-176.0,-175.0,-174.0,-173.0,-172.0,-171.0,-170.0,-169.0,-168.0,-167.0,-166.0,-165.0,-164.0,-163.0,-162.0,-161.0,-160.0,-159.0,-158.0,-157.0,-156.0,-155.0,-154.0,-153.0,-152.0,-151.0,-150.0,-149.0,-148.0,-147.0,-146.0,-145.0,-144.0,-143.0,-142.0,-141.0,-140.0,-139.0,-138.0,-137.0,-136.0,-135.0,-134.0,-133.0,-132.0,-131.0,-130.0,-129.0,-128.0,-127.0,-126.0,-125.0,-124.0,-123.0,-122.0,-121.0,-120.0,-119.0,-118.0,-117.0,-116.0,-115.0,-114.0,-113.0,-112.0,-111.0,-110.0,-109.0,-108.0,-107.0,-106.0,-105.0,-104.0,-103.0,-102.0,-101.0,-100.0,-99.0,-98.0,-97.0,-96.0,-95.0,-94.0,-93.0,-92.0,-91.0,-90.0,-89.0,-88.0,-87.0,-86.0,-85.0,-84.0,-83.0,-82.0,-81.0,-80.0,-79.0,-78.0,-77.0,-76.0,-75.0,-74.0,-73.0,-72.0,-71.0,-70.0,-69.0,-68.0,-67.0,-66.0,-65.0,-64.0,-63.0,-62.0,-61.0,-60.0,-59.0,-58.0,-57.0,-56.0,-55.0,-54.0,-53.0,-52.0,-51.0,-50.0,-49.0,-48.0,-47.0,-46.0,-45.0,-44.0,-43.0,-42.0,-41.0,-40.0,-39.0,-38.0,-37.0,-36.0,-35.0,-34.0,-33.0,-32.0,-31.0,-30.0,-29.0,-28.0,-27.0,-26.0,-25.0,-24.0,-23.0,-22.0,-21.0,-20.0,-19.0,-18.0,-17.0,-16.0,-15.0,-14.0,-13.0,-12.0,-11.0,-10.0,-9.0,-8.0,-7.0,-6.0,-5.0,-4.0,-3.0,-2.0,-1.0,0.0,1.0,2.0,3.0,4.0,5.0,6.0,7.0,8.0,9.0,10.0,11.0,12.0,13.0,14.0,15.0,16.0,17.0,18.0,19.0,20.0,21.0,22.0,23.0,24.0,25.0,26.0,27.0,28.0,29.0,30.0,31.0,32.0,33.0,34.0,35.0,36.0,37.0,38.0,39.0,40.0,41.0,42.0,43.0,44.0,45.0,46.0,47.0,48.0,49.0,50.0,51.0,52.0,53.0,54.0,55.0,56.0,57.0,58.0,59.0,60.0,61.0,62.0,63.0,64.0,65.0,66.0,67.0,68.0,69.0,70.0,71.0,72.0,73.0,74.0,75.0,76.0,77.0,78.0,79.0,80.0,81.0,82.0,83.0,84.0,85.0,86.0,87.0,88.0,89.0,90.0,91.0,92.0,93.0,94.0,95.0,96.0,97.0,98.0,99.0,100.0,101.0,102.0,103.0,104.0,105.0,106.0,107.0,108.0,109.0,110.0,111.0,112.0,113.0,114.0,115.0,116.0,117.0,118.0,119.0,120.0,121.0,122.0,123.0,124.0,125.0,126.0,127.0,128.0,129.0,130.0,131.0,132.0,133.0,134.0,135.0,136.0,137.0,138.0,139.0,140.0,141.0,142.0,143.0,144.0,145.0,146.0,147.0,148.0,149.0,150.0,151.0,152.0,153.0,154.0,155.0,156.0,157.0,158.0,159.0,160.0,161.0,162.0,163.0,164.0,165.0,166.0,167.0,168.0,169.0,170.0,171.0,172.0,173.0,174.0,175.0,176.0,177.0,178.0,179.0,180.0,181.0,182.0,183.0,184.0,185.0,186.0,187.0,188.0,189.0,190.0,191.0,192.0,193.0,194.0,195.0,196.0,197.0,198.0,199.0,200.0,201.0,202.0,203.0,204.0,205.0,206.0,207.0,208.0,209.0,210.0,211.0,212.0,213.0,214.0,215.0,216.0,217.0,218.0,219.0,220.0,221.0,222.0,223.0,224.0,225.0,226.0,227.0,228.0,229.0,230.0,231.0,232.0,233.0,234.0,235.0,236.0,237.0,238.0,239.0,240.0,241.0,242.0,243.0,244.0,245.0,246.0,247.0,248.0,249.0,250.0",
             "sampleSenseYaxis": "1.81,0.00,5.44,5.44,7.26,7.26,7.26,1.81,1.81,0.00,1.81,1.81,3.63,5.44,5.44,3.63,3.63,1.81,1.81,1.81,1.81,1.81,1.81,0.00,0.00,0.00,0.00,0.00,0.00,0.00,3.63,3.63,5.44,5.44,5.44,3.63,3.63,1.81,1.81,3.63,1.81,1.81,3.63,5.44,3.63,5.44,5.44,5.44,3.63,7.26,5.44,7.26,7.26,7.26,5.44,5.44,5.44,5.44,7.26,5.44,16.33,18.14,16.33,14.51,14.51,3.63,5.44,7.26,10.88,12.70,12.70,9.07,7.26,5.44,5.44,7.26,7.26,9.07,9.07,9.07,7.26,7.26,9.07,12.70,10.88,12.70,12.70,9.07,3.63,5.44,5.44,7.26,7.26,7.26,7.26,9.07,9.07,12.70,14.51,14.51,14.51,14.51,14.51,14.51,12.70,12.70,12.70,12.70,10.88,10.88,9.07,7.26,5.44,9.07,10.88,10.88,9.07,9.07,7.26,7.26,12.70,16.33,18.14,18.14,19.95,16.33,16.33,12.70,16.33,14.51,12.70,10.88,12.70,10.88,10.88,10.88,9.07,10.88,10.88,10.88,14.51,18.14,19.95,19.95,19.95,21.77,21.77,18.14,21.77,27.21,25.40,32.65,34.46,34.46,27.21,29.02,18.14,21.77,16.33,23.58,27.21,36.28,34.46,36.28,36.28,30.84,27.21,36.28,39.91,39.91,39.91,41.72,45.35,47.16,41.72,41.72,45.35,38.09,34.46,43.53,48.98,43.53,39.91,41.72,38.09,52.60,56.23,67.12,72.56,88.88,81.63,79.81,65.30,59.86,48.98,41.72,47.16,54.42,56.23,45.35,39.91,38.09,32.65,25.40,29.02,25.40,19.95,18.14,27.21,30.84,32.65,32.65,34.46,29.02,30.84,39.91,45.35,47.16,45.35,54.42,47.16,47.16,45.35,45.35,27.21,21.77,12.70,9.07,12.70,16.33,19.95,21.77,23.58,23.58,27.21,25.40,34.46,32.65,29.02,29.02,38.09,29.02,29.02,30.84,25.40,19.95,19.95,18.14,14.51,16.33,16.33,19.95,29.02,30.84,30.84,29.02,25.40,19.95,21.77,18.14,29.02,32.65,32.65,34.46,38.09,30.84,32.65,34.46,29.02,29.02,27.21,25.40,30.84,30.84,27.21,23.58,19.95,12.70,16.33,18.14,19.95,23.58,27.21,23.58,23.58,21.77,19.95,14.51,23.58,19.95,23.58,19.95,23.58,19.95,21.77,23.58,23.58,30.84,27.21,32.65,25.40,32.65,19.95,21.77,16.33,18.14,10.88,14.51,9.07,9.07,12.70,12.70,9.07,12.70,10.88,7.26,7.26,9.07,7.26,7.26,5.44,3.63,1.81,0.00,5.44,5.44,5.44,7.26,9.07,5.44,5.44,5.44,5.44,3.63,1.81,1.81,1.81,0.00,0.00,0.00,1.81,1.81,1.81,1.81,3.63,1.81,3.63,3.63,3.63,1.81,1.81,1.81,1.81,1.81,1.81,5.44,3.63,3.63,3.63,3.63,1.81,1.81,1.81,1.81,3.63,1.81,1.81,3.63,3.63,3.63,5.44,5.44,3.63,3.63,1.81,1.81,1.81,1.81,1.81,1.81,0.00,1.81,1.81,1.81,1.81,1.81,0.00,1.81,1.81,3.63,3.63,3.63,1.81,1.81,0.00,0.00,0.00,0.00,0.00,0.00,1.81,1.81,1.81,1.81,1.81,0.00,1.81,1.81,1.81,1.81,1.81,1.81,1.81,1.81,1.81,1.81,0.00,0.00,0.00,0.00,0.00,1.81,3.63,5.44,5.44,5.44,3.63,1.81,0.00,0.00,0.00,0.00,0.00,0.00,1.81,1.81,1.81,1.81,1.81,0.00,0.00,0.00,0.00,0.00,1.81,1.81,1.81,1.81,1.81,0.00,0.00,1.81,1.81,1.81,1.81,1.81,0.00,0.00,0.00,0.00,1.81,3.63,3.63,3.63,3.63,1.81,0.00,0.00,0.00,1.81,1.81,1.81,3.63,5.44,5.44,5.44,5.44,3.63,1.81,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,1.81,1.81,1.81",
@@ -526,10 +526,10 @@
           }
         },
         "Motif1": {
-          "aprioriPlot1": "http://localhost:8081/images/APRIORI/JASPAR_cluster_92.png",
-          "aprioriPlot2": "http://localhost:8081/images/APRIORI/23146_ATF3-_sc-81189_K562_motif_cluster_92_FourColor.png",
-          "aprioriPlot3": "http://localhost:8081/images/APRIORI/23146_ATF3-_sc-81189_K562_motif_cluster_92_500bp_SAMPLE.png",
-          "aprioriPlot4": "http://localhost:8081/images/APRIORI/23146_ATF3-_sc-81189_K562_motif_cluster_92_500bp_CONTROL.png",
+          "aprioriPlot1": "http://{{cookiecutter.api_url}}:{{cookiecutter.api_port}}/images/APRIORI/JASPAR_cluster_92.png",
+          "aprioriPlot2": "http://{{cookiecutter.api_url}}:{{cookiecutter.api_port}}/images/APRIORI/23146_ATF3-_sc-81189_K562_motif_cluster_92_FourColor.png",
+          "aprioriPlot3": "http://{{cookiecutter.api_url}}:{{cookiecutter.api_port}}/images/APRIORI/23146_ATF3-_sc-81189_K562_motif_cluster_92_500bp_SAMPLE.png",
+          "aprioriPlot4": "http://{{cookiecutter.api_url}}:{{cookiecutter.api_port}}/images/APRIORI/23146_ATF3-_sc-81189_K562_motif_cluster_92_500bp_CONTROL.png",
           "aprioriComposite": {
             "Xaxis": "-249.0,-248.0,-247.0,-246.0,-245.0,-244.0,-243.0,-242.0,-241.0,-240.0,-239.0,-238.0,-237.0,-236.0,-235.0,-234.0,-233.0,-232.0,-231.0,-230.0,-229.0,-228.0,-227.0,-226.0,-225.0,-224.0,-223.0,-222.0,-221.0,-220.0,-219.0,-218.0,-217.0,-216.0,-215.0,-214.0,-213.0,-212.0,-211.0,-210.0,-209.0,-208.0,-207.0,-206.0,-205.0,-204.0,-203.0,-202.0,-201.0,-200.0,-199.0,-198.0,-197.0,-196.0,-195.0,-194.0,-193.0,-192.0,-191.0,-190.0,-189.0,-188.0,-187.0,-186.0,-185.0,-184.0,-183.0,-182.0,-181.0,-180.0,-179.0,-178.0,-177.0,-176.0,-175.0,-174.0,-173.0,-172.0,-171.0,-170.0,-169.0,-168.0,-167.0,-166.0,-165.0,-164.0,-163.0,-162.0,-161.0,-160.0,-159.0,-158.0,-157.0,-156.0,-155.0,-154.0,-153.0,-152.0,-151.0,-150.0,-149.0,-148.0,-147.0,-146.0,-145.0,-144.0,-143.0,-142.0,-141.0,-140.0,-139.0,-138.0,-137.0,-136.0,-135.0,-134.0,-133.0,-132.0,-131.0,-130.0,-129.0,-128.0,-127.0,-126.0,-125.0,-124.0,-123.0,-122.0,-121.0,-120.0,-119.0,-118.0,-117.0,-116.0,-115.0,-114.0,-113.0,-112.0,-111.0,-110.0,-109.0,-108.0,-107.0,-106.0,-105.0,-104.0,-103.0,-102.0,-101.0,-100.0,-99.0,-98.0,-97.0,-96.0,-95.0,-94.0,-93.0,-92.0,-91.0,-90.0,-89.0,-88.0,-87.0,-86.0,-85.0,-84.0,-83.0,-82.0,-81.0,-80.0,-79.0,-78.0,-77.0,-76.0,-75.0,-74.0,-73.0,-72.0,-71.0,-70.0,-69.0,-68.0,-67.0,-66.0,-65.0,-64.0,-63.0,-62.0,-61.0,-60.0,-59.0,-58.0,-57.0,-56.0,-55.0,-54.0,-53.0,-52.0,-51.0,-50.0,-49.0,-48.0,-47.0,-46.0,-45.0,-44.0,-43.0,-42.0,-41.0,-40.0,-39.0,-38.0,-37.0,-36.0,-35.0,-34.0,-33.0,-32.0,-31.0,-30.0,-29.0,-28.0,-27.0,-26.0,-25.0,-24.0,-23.0,-22.0,-21.0,-20.0,-19.0,-18.0,-17.0,-16.0,-15.0,-14.0,-13.0,-12.0,-11.0,-10.0,-9.0,-8.0,-7.0,-6.0,-5.0,-4.0,-3.0,-2.0,-1.0,0.0,1.0,2.0,3.0,4.0,5.0,6.0,7.0,8.0,9.0,10.0,11.0,12.0,13.0,14.0,15.0,16.0,17.0,18.0,19.0,20.0,21.0,22.0,23.0,24.0,25.0,26.0,27.0,28.0,29.0,30.0,31.0,32.0,33.0,34.0,35.0,36.0,37.0,38.0,39.0,40.0,41.0,42.0,43.0,44.0,45.0,46.0,47.0,48.0,49.0,50.0,51.0,52.0,53.0,54.0,55.0,56.0,57.0,58.0,59.0,60.0,61.0,62.0,63.0,64.0,65.0,66.0,67.0,68.0,69.0,70.0,71.0,72.0,73.0,74.0,75.0,76.0,77.0,78.0,79.0,80.0,81.0,82.0,83.0,84.0,85.0,86.0,87.0,88.0,89.0,90.0,91.0,92.0,93.0,94.0,95.0,96.0,97.0,98.0,99.0,100.0,101.0,102.0,103.0,104.0,105.0,106.0,107.0,108.0,109.0,110.0,111.0,112.0,113.0,114.0,115.0,116.0,117.0,118.0,119.0,120.0,121.0,122.0,123.0,124.0,125.0,126.0,127.0,128.0,129.0,130.0,131.0,132.0,133.0,134.0,135.0,136.0,137.0,138.0,139.0,140.0,141.0,142.0,143.0,144.0,145.0,146.0,147.0,148.0,149.0,150.0,151.0,152.0,153.0,154.0,155.0,156.0,157.0,158.0,159.0,160.0,161.0,162.0,163.0,164.0,165.0,166.0,167.0,168.0,169.0,170.0,171.0,172.0,173.0,174.0,175.0,176.0,177.0,178.0,179.0,180.0,181.0,182.0,183.0,184.0,185.0,186.0,187.0,188.0,189.0,190.0,191.0,192.0,193.0,194.0,195.0,196.0,197.0,198.0,199.0,200.0,201.0,202.0,203.0,204.0,205.0,206.0,207.0,208.0,209.0,210.0,211.0,212.0,213.0,214.0,215.0,216.0,217.0,218.0,219.0,220.0,221.0,222.0,223.0,224.0,225.0,226.0,227.0,228.0,229.0,230.0,231.0,232.0,233.0,234.0,235.0,236.0,237.0,238.0,239.0,240.0,241.0,242.0,243.0,244.0,245.0,246.0,247.0,248.0,249.0,250.0",
             "sampleSenseYaxis": "0.00,0.00,0.00,0.00,0.00,7.48,7.48,7.48,7.48,7.48,0.00,0.00,0.00,0.00,0.00,0.00,7.48,7.48,7.48,7.48,7.48,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,7.48,7.48,7.48,7.48,7.48,0.00,0.00,0.00,0.00,14.96,22.45,22.45,22.45,22.45,7.48,7.48,7.48,7.48,14.96,14.96,14.96,22.45,22.45,14.96,14.96,14.96,7.48,7.48,7.48,7.48,0.00,0.00,7.48,14.96,14.96,22.45,22.45,22.45,14.96,14.96,7.48,7.48,0.00,0.00,0.00,7.48,7.48,7.48,7.48,7.48,0.00,7.48,7.48,14.96,14.96,14.96,7.48,7.48,7.48,14.96,14.96,22.45,29.93,22.45,22.45,22.45,14.96,7.48,7.48,0.00,0.00,0.00,7.48,14.96,14.96,22.45,22.45,22.45,14.96,14.96,7.48,7.48,0.00,0.00,7.48,22.45,22.45,22.45,22.45,22.45,22.45,22.45,22.45,22.45,14.96,0.00,14.96,14.96,14.96,14.96,14.96,0.00,0.00,0.00,0.00,0.00,0.00,0.00,7.48,7.48,7.48,14.96,14.96,14.96,14.96,14.96,7.48,22.45,22.45,37.41,37.41,52.38,37.41,29.93,14.96,22.45,7.48,7.48,7.48,7.48,7.48,14.96,14.96,29.93,29.93,37.41,37.41,37.41,22.45,29.93,29.93,22.45,29.93,37.41,37.41,29.93,37.41,37.41,29.93,22.45,14.96,14.96,14.96,14.96,22.45,22.45,14.96,7.48,7.48,0.00,14.96,14.96,14.96,14.96,14.96,0.00,0.00,7.48,7.48,14.96,22.45,22.45,14.96,14.96,14.96,14.96,14.96,14.96,29.93,37.41,29.93,52.38,52.38,37.41,22.45,22.45,0.00,7.48,7.48,14.96,14.96,14.96,7.48,14.96,7.48,7.48,7.48,7.48,0.00,0.00,7.48,7.48,14.96,22.45,22.45,14.96,14.96,14.96,14.96,14.96,14.96,14.96,22.45,14.96,14.96,22.45,44.89,29.93,44.89,52.38,52.38,44.89,44.89,44.89,44.89,74.82,59.86,74.82,67.34,82.31,52.38,59.86,52.38,44.89,22.45,14.96,7.48,0.00,0.00,0.00,0.00,7.48,7.48,7.48,14.96,14.96,14.96,14.96,14.96,7.48,7.48,7.48,14.96,14.96,14.96,22.45,14.96,7.48,7.48,7.48,0.00,7.48,7.48,7.48,7.48,14.96,7.48,7.48,7.48,7.48,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,7.48,7.48,7.48,7.48,7.48,0.00,7.48,7.48,7.48,7.48,7.48,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,7.48,7.48,14.96,14.96,14.96,7.48,14.96,7.48,7.48,7.48,7.48,0.00,0.00,0.00,0.00,0.00,0.00,0.00,7.48,7.48,7.48,7.48,7.48,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,7.48,7.48,7.48,7.48,7.48,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,7.48,7.48,7.48,7.48,7.48,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,7.48,7.48,7.48,7.48,7.48,0.00,0.00,0.00,0.00,0.00,0.00,7.48,14.96,14.96,14.96,14.96,7.48,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00",
@@ -637,8 +637,8 @@
       "title": "Feature Pileup",
       "data": {
         "TSS": {
-          "samplePlot": "http://localhost:8081/images/TSS/23146_ATF3-_sc-81189_K562_TSS_Heatmap.png",
-          "controlPlot": "http://localhost:8081/images/TSS/CONTROL-23146_ATF3-_sc-81189_K562_TSS_Heatmap.png",
+          "samplePlot": "http://{{cookiecutter.api_url}}:{{cookiecutter.api_port}}/images/TSS/23146_ATF3-_sc-81189_K562_TSS_Heatmap.png",
+          "controlPlot": "http://{{cookiecutter.api_url}}:{{cookiecutter.api_port}}/images/TSS/CONTROL-23146_ATF3-_sc-81189_K562_TSS_Heatmap.png",
           "tableData": {
             "header": "Item,Score",
             "order": "featureEnrichment",
@@ -651,8 +651,8 @@
           }
         },
         "CTCF": {
-          "samplePlot": "http://localhost:8081/images/CTCF/23146_ATF3-_sc-81189_K562_CTCF_Heatmap.png",
-          "controlPlot": "http://localhost:8081/images/CTCF/CONTROL-23146_ATF3-_sc-81189_K562_CTCF_Heatmap.png",
+          "samplePlot": "http://{{cookiecutter.api_url}}:{{cookiecutter.api_port}}/images/CTCF/23146_ATF3-_sc-81189_K562_CTCF_Heatmap.png",
+          "controlPlot": "http://{{cookiecutter.api_url}}:{{cookiecutter.api_port}}/images/CTCF/CONTROL-23146_ATF3-_sc-81189_K562_CTCF_Heatmap.png",
           "tableData": {
             "header": "Item,Score",
             "order": "featureEnrichment",

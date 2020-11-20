@@ -13,7 +13,7 @@ if __name__ == '__main__':
         description='Delete all samples')
     args = parser.parse_args()
 
-    URL = "http://{{cookiecutter.database_server_url}}:{{cookiecutter.http_port}}/samples/"
+    URL = "http://{{cookiecutter.api_url}}:{{cookiecutter.api_port}}/samples/"
 
     # making a GET request for all the samples.
     response = requests.get(URL, verify=False)

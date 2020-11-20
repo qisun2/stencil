@@ -13,7 +13,7 @@ if __name__ == '__main__':
     parser.add_argument('jsonFile', help='Library data in JSON format')
     args = parser.parse_args()
 
-    URL = "http://localhost:8081/libraries"
+    URL = "http://{{cookiecutter.api_url}}:{{cookiecutter.api_port}}/libraries"
 
     # Reading the example.json
     f=open(args.jsonFile, 'r')

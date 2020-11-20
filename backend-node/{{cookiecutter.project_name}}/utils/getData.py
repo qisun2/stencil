@@ -12,7 +12,7 @@ if __name__ == '__main__':
         description='Retrieves all samples from backend using the GET request')
     args = parser.parse_args()
 
-    URL = "http://{{cookiecutter.database_server_url}}:{{cookiecutter.http_port}}/samples"
+    URL = "http://{{cookiecutter.api_url}}:{{cookiecutter.api_port}}/samples"
 
     # making a GET request for all the samples.
     print("\n GET data \n")

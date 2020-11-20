@@ -1,7 +1,7 @@
 {
-  "full_name": "Author",
-  "github_username": "githubUser",
-  "project_name": "backend",
+  "author_name": "Author",
+  "github_username": "githubUserName",
+  "github_repository_name": "stencil_backend",
   "version": "v1.0.0",
   "project_description": "Nodejs based REST API backend to serve genomic data",
   "open_source_license": [
@@ -12,9 +12,8 @@
     "GNU General Public License v3",
     "Not open source"
   ],
-  "database_server_url": "localhost",
-  "database_name": "testDB",
-  "http_port": 8081,
-  "data_resources": "./sampleData/Images",
-  "docker_username": "docker_username"
+  "api_url": "localhost",
+  "api_port": 8081,
+  "mongodb_server": "localhost",
+  "database_name": "testDB"
 }

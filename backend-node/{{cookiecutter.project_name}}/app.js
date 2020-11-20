@@ -50,7 +50,6 @@ const libraryRoutes = require("./api/routes/libraries");
 
 // adding static resources
 app.use("/images", express.static("./sampleData/Images"));
-app.use("/libimages", express.static("./libData/Images"));
 
 // adding helmet
 app.use(helmet());

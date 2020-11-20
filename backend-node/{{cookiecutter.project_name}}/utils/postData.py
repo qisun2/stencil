@@ -13,7 +13,7 @@ if __name__ == '__main__':
     parser.add_argument('jsonFile', help='Sample Information in JSON format')
     args = parser.parse_args()
 
-    URL = "http://{{cookiecutter.database_server_url}}:{{cookiecutter.http_port}}/samples"
+    URL = "http://{{cookiecutter.api_url}}:{{cookiecutter.api_port}}/samples"
 
     # Reading the example.json
     with open(args.jsonFile, 'r') as f:

@@ -13,7 +13,7 @@ if __name__ == '__main__':
         description='Update sample info using the PATCH request')
     args = parser.parse_args()
 
-    URL = "http://{{cookiecutter.database_server_url}}:{{cookiecutter.http_port}}/samples/"
+    URL = "http://{{cookiecutter.api_url}}:{{cookiecutter.api_port}}/samples/"
 
     # data to patch, needs to be in the format below.
     patchData = [

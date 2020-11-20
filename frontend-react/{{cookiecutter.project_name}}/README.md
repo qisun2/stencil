@@ -1,1 +1,1 @@
-# {{cookiecutter.project_name}}
+# {{cookiecutter.github_repository_name}}

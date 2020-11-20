@@ -6,7 +6,6 @@ require("dotenv").config();
 
 // requiring the library model
 const myLib = require("../models/libraryModel");
-const getURL = process.env.PUBLIC_ENDPOINT;
 
 // API FUNCTIONS
 

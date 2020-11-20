@@ -5,8 +5,6 @@
 # base image from official node LTS version
 FROM node:10
 
-LABEL maintainer="{{cookiecutter.docker_username}}"
-
 # Create app directory to hold the application code
 WORKDIR /usr/src/app
 
